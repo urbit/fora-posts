@@ -1,0 +1,108 @@
+#body.forum h1 { padding-bottom: 0; }
+#body.forum h2 { padding-bottom: 3rem; }
+
+#body.forum ul.list.post {
+  padding: 0;
+}
+
+#body.forum .list.post li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+#body.forum .list.post li p {
+  margin-bottom: .6rem;
+}
+
+#body.forum .list.post .date,
+#body.forum .list.post .title,
+#body.forum .list.post .author {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: .6rem;
+  line-height: 1rem;
+}
+
+#body.forum .list.post .title {
+  font-weight: 500;
+}
+
+#body.forum .list.post .author {
+  font-weight: 400;
+}
+
+#body.forum .list.post .continue,
+#body.forum .list.post .author:before {
+  display: none;
+}
+
+#body.forum .ship,
+#body.forum .list.post .author {
+  font-family: 'scp';
+  font-size: .8rem;
+}
+
+#body.forum .add-post {
+  margin-top: 4rem;
+}
+
+#body.forum .ship,
+#body.forum input { margin-bottom: 1rem; }
+
+#body.forum input,
+#body.forum textarea {
+  width: 80%;
+  background-color: #f7f7f9;
+}
+
+#body.forum input {
+  border: 0;
+  padding: .3rem;
+}
+
+#body.forum textarea {
+  min-height: 24rem;
+  display: block;
+  margin-bottom: 1rem;
+  border: 0;
+}
+
+#body.forum .btn {
+  text-transform: none;
+}
+
+#body.post img {
+  max-width: 100%;
+}
+
+.subfora {
+  margin-right: 0.8rem;
+  margin-top: 4rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.active {
+  font-weight: 500;
+}
+
+.button {
+  border: 3px solid #000;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.button {
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+  display: block;
+  margin-top: 12px;
+}
+
+.button:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
