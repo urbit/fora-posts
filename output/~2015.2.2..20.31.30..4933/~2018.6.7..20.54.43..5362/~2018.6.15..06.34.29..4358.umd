@@ -1,0 +1,25 @@
+:-  :~
+  [%owner '~dosnev-ridmes-firwen-patdul--topwyt-donmus-binwyd-dopzod']
+  [%type 'comments']
+  [%last-modified '~2018.6.15..06.34.29..4358']
+  [%date-created '~2018.6.15..06.34.29..4358']
+    ==
+;>
+
+My samefringe (`~taglux-nidsep`'s) has a problem.  If there is an extra 0 at the end of one of the nouns, but they are otherwise the same in 'fringe', the function will mistakenly treat them as identical.
+
+`tonlur-sarret`'s samefringe also has a problem.  If the `b` noun has fewer leaves than the `a` noun, the function will crash.
+
+Here is my updated samefringe, no attempt at fancy use of the `=^` rune this time (sad!):
+
+```
+|=  [a=* b=*]
+^-  ?
+?:  =(a b)  &
+?@  a  |
+?@  b  |
+?^  -.a  $(a [-<.a ->.a +.a])
+?^  -.b  $(b [-<.b ->.b +.b])
+?:(=(-.a -.b) $(a +.a, b +.b) |)
+```
+

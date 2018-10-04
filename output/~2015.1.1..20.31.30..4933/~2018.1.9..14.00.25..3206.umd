@@ -1,0 +1,44 @@
+:-  :~
+  [%owner '~rigsyr-mappex-micsef-foprec--nisfet-patfet-dozlyd-marzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.1.9..14.00.25..3206']
+  [%date-created '~2018.1.9..14.00.25..3206']
+  [%name 'How to build blazingly fast Vere']
+    ==
+;>
+
+It seems there is a growing number of people asking in meta "how do I make computationaly intensive task X run fast in Urbit"
+
+There seems to be two camps:
+
++ Jet maximalists
+  maintain that jets  
+  will propel us to the Mars 
+  alone
++ Jet realists 
+  maintain that jets  
+  eventually won't be enough
+  (Imagine having to jet ML application) and eventually we will need JIT for nock.
+
+I pretty much fall into Jet Realists camp as could be inferred from the biased names :p
+
+While Jets are necessary for Nock to be practical, I can't see people wanting to implement their performant systems two times: one in hoon and one using jets.
+
+People use Python and implement performance critical sections in C, but even this is suboptimal, hence why Julia is huge right now: write once and have it perform best.
+
+There is also a problem with Jet Realists camp. Nobody will ever rewrite linear algebra libraries etc in Hoon. All languages just use Fortran old whatever time tested code there is for particular function. The same is true for many other number crunching tasks. 
+
+We can't use jets, unless we spend billions to reimplement all of lapack stuff in Hoon. Can some trick similar to how we access Unixy stuff be possible?
+
+The only other option would be to move number crunching applications to a separate service and expose API. Which sounds reasonable, but some people  claim it is unurbity. 
+
+Obviously at some point there will be a need to have performant interpreter.
+
+But it still does not solve the problem of certain talk which are impossible to achieve without accessing external libraries. Including them in Vere  would mean code bloat and inflation of vere depenencies. Soon The People would demand inclusion of tensor flow and so on.
+
+Exposing API on the other hand brings us back to square one and essentially neuters Urbit: soon enough all interesting applications would require separate downloads and maintaining parallel software to be functional.
+
+∼ponmep-litsem
+
+

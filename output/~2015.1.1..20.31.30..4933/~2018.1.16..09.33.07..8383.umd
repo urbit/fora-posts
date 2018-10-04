@@ -1,0 +1,66 @@
+:-  :~
+  [%owner '~tipwyx-dinnut-dottug-dibpun--bilpec-dorryt-dozlyd-marzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.1.16..09.33.07..8383']
+  [%date-created '~2018.1.16..09.33.07..8383']
+  [%name 'Minimal Viable Exodus']
+    ==
+;>
+
+Martians,
+
+~ponmep-litsem here,  aboard a nimble comet.
+
+I have been thinking recently, and all signs on the sky are such that we are just a very small step from Urbit being able to support community without the need for any communication channels to the Borg empire (though we should keep _some_ of them for outreach).
+
+This is supposed as a short term community roadmap, just hanging it out there for anyone to maybe contribute in areas that are the most important from Urbit expansion standpoint.
+
+Except for the Core Urbit ecosystem (Vere, Hoon and Vanes) which are steadily improving with us just sitting on our Urbits (and Tlon Bureau of Urbit Development working hard) there are a lot of low-hanging fruits, which could be engineered into existence without much trouble. 
+
+## Hoon ecosystem
+
+#### Help improve documentation: 
+
+write short blog posts and host them on Urbit.
+They can later be integrated into main docs, or just into some tutorials aggregation. 
+Hoon to date is best taught by example. Thanks to heroic efforts by Galactic Volunteer ~taglux-nidsep and others at Tlon, our docs are gradually improving. Still, Arvo and Hoon standard library being rather extensive in functionality are in need of simple How-Tos. Examples: how to virtualize hoon, how to parse json,  are examples of small tasks oriented and with some effort could me made self-contained. If we have enough content we can start dedicated fora for this purpose (work name "Hoon Hub").
+
+#### Online editor: 
+
+I am making what's possible to finish Plato soon. Expect beta soon.
+
+#### Q & A site: 
+
+as Martians, every time someone posts a question about Urbit on Borg's stackoverflow, our heart is in pain. I am not aware of any efforts to this end, so just a quick idea: the very minimal Q & A site could still use fora, with a simple app to allow upvoting. Forget about security, bots etc. For now all it takes is to have a upvote button for comments and slightly modify rendering. 
+
+Summary: to socially bootstrap a language we need: good docs, online editor, Q & A site, and vibrant tutorial community. First two are coming, the latter two need some effort on our part. 
+
+## Social network
+
+Urbit itself is a social networks. Links of the social graph are manifested as physical data links connecting 
+urbits. There are several pressing areas that need to be improved before we can leave Borg Kingdom for good. 
+
+- Talk is enough for now. Improvements will come when I finish Elm Urb library. Until then even though a bit clumsy, it is perfectly Minimal Viable Chat. 
+
+- We badly need "follow" app. Blogs need a way to catch onto their audience. Minimal Viable App here just needs to be some separate interface ala twitter/facebook/whatever feed.  When someone publishes a new blog post it just need to send a message to "follower" urbits which then should appear as a "new" notification. It does need to be fancy. It should be doable just with the Hall we have now. 
+
+- Microblogging. Microblogging is crucial to "social liquidity" and stands in middle of "Chat < Microblog < Blog" hierarchy ordered according to attention span. This one is would require some thought, but essentially it can reuse a lot of current :talk functionality. Just need a different interface on top.
+
+Summary: Out of the 4 components, 
+Chat, Microblog, Blog, Follow, we have 2. Microblogging and follow functionality need someone to implement them. Ideally, Urbit should just feel as one platform; Nonetheless, at this stage it is perfectly ok to keep 
+these separate and use them as a starting point for future work. 
+ 
+
+# Minimal Viable Exodus
+
+Put together these services should allow a lot of Urbit followers 
+to ditch Big Social entirely, at least in the context of Urbit development and coordination. 
+
+Complete severing of the cord can only come after we have implemented 
+an integrated social network interface and put optional connectors to Borgs platforms to allow 
+people who for some reason can not avoid them temporarily mantain connectivity to outside world while Urbit is gearing for ultimate conquest ;-)
+
+Hosting at least our Urbit community completely outside of reach of Borgs is a necessary first step. 
+
+

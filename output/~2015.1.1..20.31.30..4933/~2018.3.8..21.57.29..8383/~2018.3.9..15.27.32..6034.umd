@@ -1,0 +1,36 @@
+:-  :~
+  [%owner '~naptyv-ticsyp-wordem-rivtyc--hopdep-ritsub-marreg-wanzod']
+  [%type 'comments']
+  [%last-modified '~2018.3.9..15.27.32..6034']
+  [%date-created '~2018.3.9..15.27.32..6034']
+    ==
+;>
+
+Urbit's killer feature is its trust network.
+'Trust' is a better word for the concept than 'reputation', although 'reputation' is fine as long as we're careful about the fact that we mean 'trust' not 'value'
+
+This talk of upvotes is nauseating.
+Do we really want to compete in the Dopamine-soaked trenches of Social Reputation?
+
+Trust is the most fundamental(non-vital) currency.
+A perfect trust rating is not "the greatest number of upvotes/followers/repeats" it is in indication that an agent certainly is who it claims to be and acts forthrightly and predictably.
+
+Trust is multidimensional, but let's consider it a single variable for now.
+
+We track trust on a scale of negative infinity to positive infinity.
+Let us divide by infinity and say -1t to +1t.
+
+When I encounter a new agent, I neither trust nor distrust him(0t).  If he reveals himself to be a fraudulent telemarketer, I trust him -1t. If he reveals himself to be an apparent fellow traveller, I trust him +0.25t.
+
+I've interacted with ~palfun-foslup enough to trust him +0.5t -- i.e., I fully believe he is who he claims to be. I would meet him for lunch, introduce him to my family. But I wouldn't ask him to house sit for me, at least not before the previous two Rites. (aside: ~palfun, do not be offended by the meager 0.5t, half of infinity is quite a lot of trust. Anyway, the scale is in flux but for the time being, I'm assuming 0.5t is around the upper limit for an almost perfect stranger).
+
+Once  implemented, this trust network enables applications almost unimaginable now.
+Consider: Would you use an application that allows you to pick up home-cooked meals from local strangers? Likely not.
+But: Would you pick up a home-cooked meal from your aunt? What about from your best friend's mother?
+I can think of 40 humans from whom I would gladly accept home-cooked meals.
+And importantly: I can think of as many humans whose trust recommendations I would weigh heavily when considering the same.
+
+n.b., In these human networking matters, we care not how many followers, fans, repeats, replies, thanks, waves, or +1's one has. We care only whether an agent should be trusted and to what degree.
+
+~risruc-habteb
+

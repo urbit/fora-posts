@@ -1,0 +1,23 @@
+:-  :~
+  [%owner '~walfeb-tarryt-maglyd-dasdys--nimdul-dotdyn-binwyd-dopzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.6.29..19.37.30..8144']
+  [%date-created '~2018.6.29..19.37.30..8144']
+  [%name 'Hoon Exercises for Beginners #5']
+    ==
+;>
+
+Let T be a `(tree @)` (see `++  tree` in `hoon.hoon`).  Here's an example tree:
+
+```
+> `(tree @)`[n=11 l=[n=22 l=~ r=~] r=[n=33 l=~ r=~]]
+{22 11 33}
+```
+
+##### Write a Hoon program that searches T head-first for some atom A and replaces the (first copy of) A with another atom B.
+
+##### Write another program that replaces *all* instances of atom A with atom B in T.
+
+##### Write a program that takes some `(tree @)` and returns `%.y` if it's balanced and `%.n` if it isn't.  A tree T is balanced if and only if for every node of T the number of left and right (non-null) 'child nodes' differs at most by `1`.
+

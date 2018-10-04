@@ -1,0 +1,17 @@
+:-  :~
+  [%owner '~docfer-nolpyl-daptel-milmyr--soglet-wicsul-dozner-samzod']
+  [%type 'comments']
+  [%last-modified '~2018.3.14..05.05.14..2220']
+  [%date-created '~2018.3.14..05.05.14..2220']
+    ==
+;>
+
+Hello. This is not quite related but I'm changing my home machine and I tried to boot up my star using my ticket again. 
+
+I'm doing something along the lines of urbit -w ~STARNAME -t ~TICKET
+
+But all I get is:
+zsh: no such user or named directory: STARNAME
+
+It worked this way before, but that was a while ago, what should I do now?
+

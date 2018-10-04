@@ -1,0 +1,18 @@
+:-  :~
+  [%owner '~ladhec-samlev-niblun-ragsyr--nardun-sogsun-marreg-wanzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.3.12..18.22.37..9154']
+  [%date-created '~2018.3.12..18.22.37..9154']
+  [%name 'What does the future of compute/storage resource ownership look like if Urbit becomes ubiquitous?']
+    ==
+;>
+
+Let's say that many people will use a system like Urbit to compute on their own data in the future. Given that the amount of data that an individual generates is increasing over time, wouldn't most individuals still want to rely on some external service to manage their hardware, purely from a cost perspective? B/c there are economies of scale in managing lots of hardware.
+
+Couldn't that could thwart individual ownership of data?
+
+Maybe my thinking is completely off; feel free to shoot holes through it.
+
+
+

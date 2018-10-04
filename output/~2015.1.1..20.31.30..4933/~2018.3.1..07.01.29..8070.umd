@@ -1,0 +1,41 @@
+:-  :~
+  [%owner '~wacwer-dorref-dibtyv-lopsug--tirsed-ramlyr-dozsen-marzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.3.1..07.01.29..8070']
+  [%date-created '~2018.3.1..07.01.29..8070']
+  [%name 'Why flutter matters for Urbit (and Linux)']
+    ==
+;>
+
+If you haven't read my rant on "heat death of the browser", long story short:
+Google has done what should have been done a long time ago, and developed https://github.com/flutter. Cross-platform, native, "cameleon" toolkit which uses platform specific features. It works, very, very well for being developed for so short time, and google has already started using it for their billion-dollar ad platform. 
+
+You write your program once in strongly-typed, a bit react,js-like dart language and you can actually compile it for iOS and android and have it look and behave like native application running at 60 fps. 
+
+Linux folks are already seeing the opportunity after google has partially ported flutter to desktop mac, and several people are working on prototype for linux desktop. 
+
+This means that in the near future someone will port the flutter shell to wayland+dbus+opengl.
+
+# What this means (probably)
+
+- Flutter is being taken seriously by companies other than google and
+  we can expect some serious companies moving their dual code bases to it.
+
+- The progressive web apps will take a setback, because flutter removes the only reason for them in the first place - iOS/android fragmentation, providing smooth rendering, true notifications and other platform specific integration, coupled with efficient compiler, something which web app will not achieve even if tomorrow we had webassembly webapi
+
+- The future for now looks like 60 fps smooth apps working everywhere versus sluggish web apps which no one will want to use. 
+
+- When (not if) linux will get flutter shell port, we will see all these apps flooding into linux (and windows and mac). This is the "machine-gun-carrying borg" I talked about in that rant ;-)
+
+# Urbit and Flutter
+
+All Urbit interfaces for now reside in the browser (save text console). 
+Let us think what should be the Urbit answer if we find ourselves in the Web 2.0 world suddenly being morphed into App 3.0 as if someone pulled the rug on us. 
+
+The only significant obstacle I see is distributing the interface code (which will be sandboxed). Though it is not very different from what we have now, that is react UIs being compiled and shipped with urbit distribution.
+
+In light of this, it is evident clay needs to get better at hosting binary blobs. Right now it prevents even simple webapp such as plato from being distributed efficiently. 
+
+~ponmep-litsem
+

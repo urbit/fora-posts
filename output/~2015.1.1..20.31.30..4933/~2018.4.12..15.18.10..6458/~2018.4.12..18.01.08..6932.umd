@@ -1,0 +1,13 @@
+:-  :~
+  [%owner '~dirped-lindeb-mitlep-dopwyt--soghex-hadwyc-marnup-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.4.12..18.01.08..6932']
+  [%date-created '~2018.4.12..18.01.08..6932']
+    ==
+;>
+
+The main stumbling point, for me, when trying to follow a reasonably complex example like, say, https://urbit.org/docs/arvo/http/  is purely an issue of layout. Having the 'working text' right at the top and then bulky (but very useful) line by line explanation below it leads to a lot of scrolling up and down, trying to find you place in the explanation again, etc, which breaks the flow.
+
+Simply having the example in a separate side bar (because good hoon is narrow, not wide, right? ) or a nice "open code in new window" button would greatly reduce the steepness of the on ramp IMHO.  
+
+

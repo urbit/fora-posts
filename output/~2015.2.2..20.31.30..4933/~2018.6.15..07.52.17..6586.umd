@@ -1,0 +1,41 @@
+:-  :~
+  [%owner '~dosnev-ridmes-firwen-patdul--topwyt-donmus-binwyd-dopzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.6.15..07.52.17..6586']
+  [%date-created '~2018.6.15..07.52.17..6586']
+  [%name 'Hoon Exercises for Beginners #4']
+    ==
+;>
+
+Here's a new set of exercises.  Good luck!
+
+### Let N be a noun and f be a 'fragment' of N.  Write a gate that takes N and f, and which returns the 'address' of f in N.
+
+A fragment of a noun is some piece of that noun.  (The piece is itself also be a noun.)  For some examples:
+
+```
+Noun: [[12 14] [22 21]]
+Fragments: 12, 14, [12 14], 22, 21, [22 21]
+
+Noun: [1 2 3]
+Fragments: 1, 2, 3, [2 3]
+
+Noun: [12 [14 25] 45]
+Fragments: 12, [[14 25] 45], 14, 25, [14 25],  45
+```
+
+The same fragment could be in a noun more than once, e.g., `[12 14]` in `[[12 14] [12 14]]`.
+
+Write a gate that takes some noun N and some fragment f, and which returns the address of f in N.  If there are multiple copies of f in N, then only return the address of the first one found.
+
+Definition of address: the whole noun, N, is itself at address `1` of `N`.  For any cell at address node `n` of `N`, the head of that cell is address `2n`, and its tail is at address `2n+1`
+
+### If N is a noun with fragment f in it somewhere, return modified N with f' in place of f
+
+Write a gate that takes: (1) N, some noun; (2) f, some fragment of N; and (3) f', some other noun.  Have the gate produce a modified version of N, where f' takes the place of (the first found copy of) f.
+
+### Return a list of addresses of all instances of f in n
+
+Write a gate that takes some noun, N, and some fragment of N, f, that produces a list of the addresses of *every* copy of f in N.
+

@@ -1,0 +1,35 @@
+:-  :~
+  [%owner '~ronfyl-sarlur-dovpes-batseg--tolsyd-rocwyc-rivteg-daplun']
+  [%type 'comments']
+  [%last-modified '~2018.4.30..23.22.18..2440']
+  [%date-created '~2018.4.30..23.22.18..2440']
+    ==
+;>
+
+Haha, I was confused by this question at first, but ~bottun's comment cleared this up for me. Thanks!
+
+It's likely that your Screen session is wuffing at you for attempting to type invalid Dojo expressions. Urbit's shell, the Dojo, only allows you to type valid Hoon and Dojo expressions (the latter of which is a superset of regular hoons).
+
+For example, the Hoon rune `:-` (pronounced "col-hep") simply produces an ordered pair of two nouns. The Dojo parser expects that `:-` receive two and only two nouns as parameters. So, when I type this:
+
+```
+~zod:dojo> :-(42 43)
+[42 43]
+```
+
+it gets inputted and computed correctly (hitting the Enter key to execute the code).
+
+Whereas, when I try to type this:
+
+```
+~zod:dojo> :-(42 43<attempting to enter another space>
+```
+
+Dojo detects this as invalid syntax and produces a specific kind of error effect: Dojo handles the error by producing a _move_ (an Arvo-level effect) that goes through the Arvo event handler (via the Gall and Dill kernel modules, or _vanes_) out to Vere (the Urbit runtime) to produce the terminal bell in Unix. And since it seems you're running your urbit in a Screen session, it wuffed at you!
+
+Try out the [Urbytes](https://urbit.org/docs/urbyte/) and check out [the second one](https://urbit.org/docs/urbyte/2/) in the series for a "Welcome to the Dojo" section for an introduction to playing around with Hoon and Dojo expressions.
+
+Hope that helps!
+
+- `~tonlur-sarret`
+

@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~rovnys-ricfer']
+  [%type 'comments']
+  [%last-modified '~2018.4.5..21.17.34..1385']
+  [%date-created '~2018.4.5..21.17.34..1385']
+    ==
+;>
+
+We have now tested `%ride` with blocking scry and succeeding scry. We ended up changing the design to unify the local scry results with the real scry namespace instead of making a `%scry` sub-build for every attempt at a scry. This new design will only make a sub-build for a scry that blocked.
+
+This work is on the ford-turbo branch of the main Arvo repo.
+

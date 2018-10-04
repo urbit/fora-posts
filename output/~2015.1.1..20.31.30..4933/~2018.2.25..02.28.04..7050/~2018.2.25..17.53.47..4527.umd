@@ -1,0 +1,25 @@
+:-  :~
+  [%owner '~dirsef-sillux-simdyn-rilfus--topsug-salrec-dozlyd-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.2.25..17.53.47..4527']
+  [%date-created '~2018.2.25..17.53.47..4527']
+    ==
+;>
+
+The forward/backward patch discussion is very interesting. Git for obvious reasons allows for diff to go both ways: but that's only because text is easy.
+
+It seems if we restrict that patch direction is set in stone for a particular clay node and cannot be retroactively changed, the code complication would not be unmanageable, maybe.
+
+On the other hand I feel like forward semantic patches are much more important case. They flow in the direction of the arrow of time; irreversible processes are always forward patched.
+
+The case for reversible back patchable processes has some appeal, but for me it seems what we are after, while technically being a patch, is more like a "point of view".
+
+For me, patch is primarily about new information: and this always forward flowing (and naturally semantical) 
+
+You can say going back in time is also a kind of a "patch", but maybe we could accommodate it inside forward diff framework.
+
+Perhaps that example be best implemented using other means. Does this kind of scenario is really best suited for using revision control on a single json structure?
+A Gall app could store actual thread messages in clay, and they carry inherent forward patch semantics. The polling best be left for pokes to Gall. Handling that in a revisionless indexable list seems suitable.
+
+∼ponmep-litsem
+

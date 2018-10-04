@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~wacner-rigsup-filtyc-mocleg--talmet-dabsel-binwyd-dopzod']
+  [%type 'comments']
+  [%last-modified '~2018.6.13..07.03.02..6335']
+  [%date-created '~2018.6.13..07.03.02..6335']
+    ==
+;>
+
+Is it necessary to have a hoon file at the top level, or is a markdown file sufficient?  Having trouble getting this to work.
+

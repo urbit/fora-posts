@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~fipmed-nammyn-hidwes-tobmur--fodwep-tobtul-dozner-samzod']
+  [%type 'comments']
+  [%last-modified '~2018.3.29..06.20.08..3154']
+  [%date-created '~2018.3.29..06.20.08..3154']
+    ==
+;>
+
+Adding destructuring to `=/` sounds like it'd be better...`=+` lets you do `=+  [p=1 q=1]  p`, and `=/` is supposed to be Strictly Better than `=+`
+

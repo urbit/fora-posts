@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~rovnys-ricfer']
+  [%type 'comments']
+  [%last-modified '~2018.4.12..01.06.35..9480']
+  [%date-created '~2018.4.12..01.06.35..9480']
+    ==
+;>
+
+The tests pass now! [Latest commit.](https://github.com/urbit/arvo/tree/ee18157026aff4fc596cd79034d8eb66f43abf29)
+
+Next step will be reinstating the five-oh-fora test case and see if that works.
+

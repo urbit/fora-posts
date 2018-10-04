@@ -1,0 +1,30 @@
+:-  :~
+  [%owner '~hodsel-talleb-migset-pantyr--disted-laclyn-dozner-samzod']
+  [%type 'comments']
+  [%last-modified '~2018.4.8..14.03.33..8902']
+  [%date-created '~2018.4.8..14.03.33..8902']
+    ==
+;>
+
+I agree it is good to have standards, but with regards to plato it is definitely not part of infrastructure in the usual sense. If someone wants to build UI in react, they can.
+After all, it was designed to be entirely decoupled from the Urbit backend. 
+
+I actually think our current model works great, but that might be biased opinion ;-) At the time I was building plato, I made a series of posts on fora discussing different tradeoffs. Since at the time there was no sufficiently complex app I could find, and no one tried to stop me :^), I went ahead and used the best tool I could find - I don't think it would have been possible within the 'standard' JS+XX stack, and I did not see anything to gain by doing so, as JS stands at quite opposite place from type-safe Hoon.
+
+I think what happened with Tumblr API and wiki is actually a lack of useful UI. If they had reached the usability bar - there would be incentives to keep it running. Otherwise they just land in the 'examples' section as you said.  In other words, we haven't really started using them, perhaps because they stopped short of being *actually* useful. 
+
+As for Plato, I think it is great way to prototype Hoon code, and plan to continue using it. 
+If tomorrow I get hit by the proverbial bus, it is very easy for someone else to pickup everything.
+Entire code is documented. 
+
+So I do not think we suffer from lack of standarized shovels - in fact, I think there aren't many real shovels to begin with. Not diminishing all the work on Urbit apps that was done - I haven't seen (bite me if they are) any Urbit apps that tried hard to cross the barieer between "Cool example" and "Tool that will help us develop other tools, and we can use it starting today". 
+
+Without crossing this potential barieer we will just be bouncing off it, not tunneling through, and grow our "examples" section - and I still think this wasn't because the creators lacked skills (definitely not!) - but because unfortunately it is very hard for a single person to build usable web applications in standard JS stack, compared to just writing Hoon app running inside urbit. 
+
+My take is that right now we need all the shovels we can get. It is good if there are standarization processes going on - if we have another way for building UI for Urbit, and it will be genuinely better than the Elm framework I build starting from Plato, I promise I will rewrite the frontend to use it :-))
+
+Take my "defense of the shovels" with the usual correction for creator's insecurity about his own creation. 
+
+`~ponmep-litsem`
+
+

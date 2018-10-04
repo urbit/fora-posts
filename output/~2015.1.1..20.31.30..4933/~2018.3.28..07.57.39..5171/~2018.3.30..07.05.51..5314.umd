@@ -1,0 +1,17 @@
+:-  :~
+  [%owner '~rovnys-ricfer']
+  [%type 'comments']
+  [%last-modified '~2018.3.30..07.05.51..5314']
+  [%date-created '~2018.3.30..07.05.51..5314']
+    ==
+;>
+
+Adding destructuring to `=/` sounds nice, especially in light of the Strictly Better Than `=+` stipulation, but how would it work? Maybe something like this:
+
+```
+=/  [a=? b=(unit @tas)]  [& [~ %foo]]
+?~  b
+  a
+u.b
+```
+

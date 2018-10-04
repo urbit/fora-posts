@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~palfun-foslup']
+  [%type 'comments']
+  [%last-modified '~2018.2.28..11.15.01..6165']
+  [%date-created '~2018.2.28..11.15.01..6165']
+    ==
+;>
+
+I mean, that's neat and all, but [xkcd 972](https://xkcd.com/927/) is forever relevant here. You'll need readers to actually support it, and those readers will realistically still have to support the XML formats as well... not to mention the fact that you as a website will want to keep serving XML too because not all your follower's clients are going to support JSON Feed.
+

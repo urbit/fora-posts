@@ -1,0 +1,96 @@
+:-  :~
+  [%owner '~tirryl-palhep-taswes-locdur--lomsen-follec-marnup-marzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.4.12..15.18.10..6458']
+  [%date-created '~2018.4.12..15.18.10..6458']
+  [%name 'Documentation Goals and Guidelines (Docs Discussion Thread #1)']
+    ==
+;>
+
+### Making better documentation
+
+One of the things that people complain about when they first explore Urbit is the documentation.  They complain that it's too inscrutable, it uses too many undefined (or poorly defined) terms, is too complex, etc.  Some of these complaints are fair.  (In fact, certain parts of the documentation are pretty good, but these parts are integrated with other parts that aren't so good, and so their virtues aren't always noticed and appreciated.)  One silly theory floating around is that the documentation was intentionally made difficult just to filter out those who aren't sufficiently dedicated, intelligent, etc.
+
+Improved documentation would do a few things to benefit the Urbit community.  First and most obviously, learning about Urbit would be easier.  Right now, the amount of time one has to spend to learn a fair amount of Hoon is too high.  As a result, the length of time from when someone first learns about Urbit to when they can start contributing effectively is also too high.  Furthermore, it's likely that others are scared off by the apparent difficulty of learning about Urbit.  Ideally when someone gets stuck when working through a tutorial, he'd pop into `/urbit-meta` and ask questions.  However, we can safely assume that in some cases potential urbiteers close the browser tab and move on to other things.
+
+Second, good documentation is good advertising.  If we can communicate effectively about Urbit then we've demonstrated that *we* understand it well.  That sends a good signal to prospective urbiteers.  It builds confidence within the community, quiets skeptics, and makes us more trustworthy.  (It's easier to trust someone you understand!)
+
+### This is a community project
+
+The documentation we currently have is in certain respects a good start, but we can make it a lot better.  `~lodleb-ritrul` (Rob) and I (`~taglux-nidsep` aka Josh) have been asked to work on just this project.  I've noticed two things as I talk about this project to others in the community.  First, a lot of people have a lot of great ideas.  Second, there is a non-trivial amount of disagreement about what changes should be made.
+
+In the past I served as a military officer.  One of the great things about being an officer is that you're given a goal, some resources, and then you're set loose to get the job done.  You often don't have to explain your plans to anyone else if you don't want to.  If the end result of your plan is bad you'll hear about it, but otherwise the boss is happy.
+
+Working on an open source project is a lot different from being in the military, however.  Rob and I can't just come up with a plan on our own, execute it, and only show the community the end result.  We need feedback at every stage of the development process so that (i) we can get community buy-in, (ii) we can take advantage of the wisdom of our Urbit-savvy betters, and (iii) we can avoid any unpleasant surprises.  Where disagreement exists we need to handle it with open and rational discussion.
+
+If we're going to do a good job of revising the documentation we need your help.
+
+### The point of goal-setting
+
+We need to set goals for the documentation.  These goals will serve as the motivating force for the changes we make, and a measure against which our efforts can be assessed.  This cannot be an ad hoc process or else the result will likely turn out to be an aimless mess.  Good docs don't come about by accident.  In the rest of this post I'm going to propose some goals to orient the rewrite.  I welcome feedback about my list, and also suggestions about other goals that you think we should add.
+
+### Goals and Guidelines
+
+#### Conservatism
+
+We don't intend to throw away the good work that has already been put into the current documentation.  We respect our forefathers and their achievements.  Reorganization and some rewriting are needed, but we can do a lot of this without redoing the good work already done.  Laziness is a vice, but strategic laziness is a virtue.
+
+#### Clear and direct communication of semantics
+
+Abstraction is what separates man from the animals.  Abstraction can also be scary, but we must not be cowards.  We could hide semantics in an effort to make Hoon tutorials easier to learn, but this is a mistake.  It would serve only to stunt the development of good understanding.  We need our tutorials to have clean and clear abstractions that the beginner can trust, but which are also accessible and not too intimidating.  If we can provide an accessible and reliable mental model to beginners this will build their confidence and give them powerful programming tools they can use in ways the tutorials haven't directly addressed.  From a pedagogical standpoint, abstractions can be force-multipliers.
+
+Let me explain what I *don't* mean by abstraction.  I don't mean that we should tell beginners how the Hoon compiler implements various commands or functions.  This would be too much, too fast, and would serve only to demoralize rather than edify.  We've got to hide the messier parts and reveal them methodically, only when the student is ready.
+
+The great thing about an abstraction is that it can be anything that is isomorphic to the implementation.  In a way creating good semantics---especially semantics for beginners---is like a technical sort of myth-making.  The entity "mold" (or "model", or whatever we're calling it now) is a resident of Plato's heaven, and doesn't necessarily have to live in `hoon.hoon`.  Yet it may be profitable for the Hoon student to think in terms of molds when learning the type system.
+
+However, we can only do a good job at semantic myth-making if we have clear lines of communication between Rob and I and those who do understand Hoon's low-level implementation details.  Regular conversations with ~sorreg, ~pittyp, ~rovnys, and others are necessary if our myths are to be truly accountable to the implementation details.  We've got to boil those details down to accessible mental models that *just work*.  Does this sound hard?  It is.  We have to do it anyway.
+
+There are two broad categories of abstraction we'll need to attend to throughout the Hoon tutorials we write (that I can think of at the moment, anyway): subject-oriented programming, and the type system.  The student needs to get comfortable with both kinds of abstraction at a relatively early stage.  We can teach these in stages, and we should, but we need to keep these in mind every step of the way.
+
+I've focused mainly on Hoon semantics, but there are larger network semantics we need to think about too.  Actually this may need to be a bigger area of emphasis than even Hoon semantics.  Thoughts about this topic are appreciated.
+
+#### Use examples without using them as crutches
+
+Examples are good.  Let it never be said that I am against using well-chosen examples.  What we can't do, however, is engage in example-mongering as a substitute for teaching semantics directly.  Examples are to be used to *illustrate* semantics, not to *teach* it.  This rule can sometimes be bent, but if we ignore it altogether then we aren't doing our job as pedagogues.  Give a man an example and he can solve one problem, and possibly extend the solution to problems that are related.  Give him the rule-book and the game is his.
+
+#### Use metaphors without using them as crutches
+
+I love metaphors.  Some of my best friends are metaphors.  But metaphors are tools with definite limits, and unfortunately the current documents use them a little too casually.  A metaphor is a great way to make an analogy between unlike things, but analogies aren't usually well-defined enough to give precise specifications.  One could say "Your Urbit is a blockchain for packets to your computer," but this under-specifies *the way* in which your Urbit is a blockchain.  Think of metaphors (and similes) as being spices, not the main course.  (This guideline can be bent sometimes; in some cases the context is sufficient to make the meaning unambiguous.)
+
+This is especially important for definitions.  Strict definitions need to be direct.  We certainly can't say something like, "Faces are variables."  Perhaps early in the documentation it's okay to say "Faces are like variables," but we need to flag such comments as potentially misleading, and we need to promise (and provide) a more rigorous notion of a "face" at the proper time.
+
+#### Doc Continuity and Structure
+
+For the Urbit beginner we need to give firmer direction about the way they should approach the documentation.  Right now we have various "tracks", each of which doesn't really connect well with any other section of the docs.  Different people have different learning styles, and to some extent we should accommodate this.  But I would argue that this accommodation should come in the form of optional modules, not totally separate tutorial tracks.  For each section it should be relatively clear what prerequisites are necessary.  We don't need to force people to follow those prereqs obviously, but we should offer suggestions.  Most will be grateful for the guidance.
+
+Don't underestimate the pedagogical value of order and structure in documentation.  In a sense the documentation structure is a mental model of Urbit itself.  (Or, at least, it should somewhat resemble such a model.)
+
+#### Simplicity
+
+This is a somewhat aesthetic priority, but I also think it's pretty practical.  Things that aren't simple tend to be sprawling, and sprawl is ugly.  But sprawl is also harder to take in.
+
+For one example: we have nine top-level sections in the docs section, and I think that's too many.  We should impose a more definite structure that sorts these parts into fewer sections.
+
+#### Differentiation of types of documentation
+
+There is a difference between a tutorial and a reference.  The former is more pedagogically oriented, and the latter is for providing rigorous definition and semantics.  Of course some rigor is needed in a good tutorial, and there's no reason why a reference can't have pedagogical value---these distinctions aren't absolute.  But each sort of documentation has its own goals and we should respect the fact that they sometimes vary.
+
+I think we should recognize three sorts of documentation: tutorials, references, and how-to guides.
+
+The role of a tutorial is to provide deep understanding in an accessible way (e.g. a Hoon guide).  A reference provides rigorous definition (e.g., comprehensive rune docs).  And a how-to guide tells one how to get something done without necessarily explaining what's going on (e.g. Urbit installation guide).
+
+#### Community generated content
+
+Galen has mention the importance of community-driven contributions to the docs.  I don't have a ton of ideas here, so feedback would be particularly useful on this issue.  One possibility is to have programming challenges that Hoon beginners try to tackle.  The best submissions could be cleaned up, documented, and posted in a prominent place as an example of good Hoon code.  I don't think we should ask the community to give strict semantic definitions or write careful, accessible tutorials.  But good code is certainly something plenty of people in the community should be able to create!
+
+Anyone have other ideas?
+
+#### Misc.
+
+I think certain goals are pretty straight-forward, and don't need much explanation.  The docs should be rigorous, user-friendly, clear, have good examples, and avoid unnecessary pain-points.
+
+Okay, I'm running out of steam.  Time to hit "post" and take a break.  Share your thoughts!
+
+~taglux-nidsep
+

@@ -1,0 +1,14 @@
+:-  :~
+  [%owner '~rovnys-ricfer']
+  [%type 'comments']
+  [%last-modified '~2018.4.5..00.13.56..7058']
+  [%date-created '~2018.4.5..00.13.56..7058']
+    ==
+;>
+
+We have an implementation of the `%ride` schematic now that compiles and passes a basic test. 
+
+We have not yet tested handling of the case where the Hoon code in the `%ride` schematic performs a scry operation. When that happens, Ford will intercept any scry's, using only Ford's local results of `%scry` schematics as the namespace. Any other calls will block and will be turned into their own `%scry` sub-builds.
+
+Testing that is up next.
+

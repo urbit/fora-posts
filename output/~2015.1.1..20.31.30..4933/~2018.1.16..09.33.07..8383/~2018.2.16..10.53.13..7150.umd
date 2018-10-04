@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~pilsyp-tacwyd-mitfer-nimnex--natlur-lomres-dozlyd-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.2.16..10.53.13..7150']
+  [%date-created '~2018.2.16..10.53.13..7150']
+    ==
+;>
+
+Agree with ~malmul_marzod, I think a big necessary step towards making urbit minimally viable will be making it more performant. Right now urbit-hosted applications are still noticeably slow and laggy, and this in and of itself makes the system hard to experiment with and use as a replacement for anything.
+

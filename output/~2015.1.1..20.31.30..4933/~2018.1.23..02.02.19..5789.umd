@@ -1,0 +1,31 @@
+:-  :~
+  [%owner '~tonlur-sarret']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.1.23..02.02.19..5789']
+  [%date-created '~2018.1.23..02.02.19..5789']
+  [%name '~2018.1.22 Weekly update']
+    ==
+;>
+
+**Galen** `~ravmel-ropdyl` and **Jimmy** `~haptyl-wanwes` have been working on the primer. It’ll go up on urbit.org eventually. It’s got videos, diagrams, and a general Urbit overview. Jimmy has been working on the rest of urbit.org too. It’s all looking really great.
+
+**Chris** `~sigtus-hossyn` has made progress on our _Collections_ and _Streams_ project, which will replace and generalize the current Talk, Fora, blog, and docs.
+
+**Curtis** `~sorreg-namtyv`, after doing more work on the primer with Galen, is switching back to writing code. He has been working on a plan to boot Urbit ships using Ethereum, and he’s been working on Hoon 143 performance.
+
+**Ted** `~rovnys-ricfer` and **Anton** `~pittyp-datfyn` have been working more on Ford cache performance.
+
+**Mark** `~palfun-foslup` has been solving bugs and has started work on permissions in Clay. He also improved part of Clay’s API with Ted, to support the Ford work. 
+
+**Isaac V** `~davtyr-nimren`’s replacement for `ren/tree` using server-side rendering got merged into the new Arvo development branch, `mve` ([Minimum Viable Exit](https://fora.urbit.org/posts/~2018.1.16..09.33.07..f53a~/)). The functionality is complete, but it’s slow and more testing and styling will be required before merging to master. This will only be fast enough once Ford’s caching is fixed.
+
+**Keaton** `~tonlur-sarret` finished converting the docs to Urbit-flavored markdown. They’re not ready for deployment yet, but they’re available [here](https://github.com/urbit/docs/tree/static) if you’re interested in playing around with this new in-Urbit markdown feature.
+
+**Mikolaj** `~ponmep-litsem` has been filing more issues and has made more progress on [Plato](https://github.com/mikolajpp/plato).
+
+**Joshua** `~taglux-nidsep` hosted another [Mars Talk](https://www.youtube.com/watch?v=JSQkjd1a6Ts) last week with Ted and Keaton on wet gates, in the third installment of the _Hoon Types_ series. This week he’ll be out, but Ted and Keaton will be hosting.
+
+Hope to see you at the Urbit office [IRL this Friday night](https://www.meetup.com/urbit-sf/events/246972285/)! Bring your laptop and we’ll install Urbit for you.
+
+

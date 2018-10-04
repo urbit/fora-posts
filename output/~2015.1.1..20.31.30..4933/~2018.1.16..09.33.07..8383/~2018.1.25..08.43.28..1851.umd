@@ -1,0 +1,25 @@
+:-  :~
+  [%owner '~sanryn-minwet-hacsug-hilmut--wisdec-pinten-dozlyd-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.1.25..08.43.28..1851']
+  [%date-created '~2018.1.25..08.43.28..1851']
+    ==
+;>
+
+samsef, I fail to see a difference between IM and email. 
+
++ Email is definitely as synchronous as IM and as asynchronous as IM.
++ The other things are an UI problem. Nothing prevents us from having good UI for longer
+  messages. You will just choose a different button ("Compose") in the messenger. 
+  Good email clients order by threads anyway (or by time, or by x, I mean you don't receive your mails in random order ;-))
+
+After all, there is nothing special about email. Just it is a widely used messaging protocol, which is horrible, outdated, but works. 
+
+If you have some specific feature which you think would be absent, just make sure to leave it here. 
+I will be getting to an alternative Talk UI in the near future. 
+
+I feel like a lot of martians assume they will be forced to type long messages in current webtalk ui. Not at all. We will definitely have slight variation of UI for different needs. 
+
+~ponmep-litsem
+
+

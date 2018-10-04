@@ -1,0 +1,16 @@
+:-  :~
+  [%owner '~litwed-pasmeg-hathet-digpun--figwep-tirmel-binwyd-dopzod']
+  [%type 'comments']
+  [%last-modified '~2018.6.6..22.20.29..8931']
+  [%date-created '~2018.6.6..22.20.29..8931']
+    ==
+;>
+
+Wait, so we still do support markdown? Is that considered deprecated? Will support for it ever go away?
+
+I should probably just get myself to like udon, and it's really not bad at all, but I recall not liking some details about it...
+
+This is really neat though. I've been thinking of turning my shitty WordPress-powered blog into a static-pages one, and now Urbit might actually be a good vehicle for page generation!
+
+Because this uses ford, it doesn't rebuild unchanged pages with unchanged dependencies, right?
+

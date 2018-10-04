@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~tonlur-sarret']
+  [%type 'comments']
+  [%last-modified '~2018.6.15..19.43.45..5025']
+  [%date-created '~2018.6.15..19.43.45..5025']
+    ==
+;>
+
+`~midbes` The iOS app is currently just a client for the new Collections and Streams (Talk) features of our MVE release. Building a full mobile Nock interpreter is work that's planned for down the line, but not right now.
+

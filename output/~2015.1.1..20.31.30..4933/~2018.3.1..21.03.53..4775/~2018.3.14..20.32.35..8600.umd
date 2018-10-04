@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~palfun-foslup']
+  [%type 'comments']
+  [%last-modified '~2018.3.14..20.32.35..8600']
+  [%date-created '~2018.3.14..20.32.35..8600']
+    ==
+;>
+
+To be clear, there aren't going to be any tokens, just ownership of Urbit addresses. The Constitution contract will provide standardized ways of transferring ownership of these things though. (ie, ERC20, ERC721)
+
+On the legal side of things, we've made sure to have our things in order. Whatever that entails exactly I can't say because I simply have no idea. Last I heard (which was when SEC announced their crack-down) address space wasn't a security?
+

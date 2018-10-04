@@ -88,8 +88,8 @@ def convert_posts(fora, idx, post):
         # iterate through all comment .md files
         coms = os.listdir(indir + post[:-3] + "/comments")
 
-#        for y in coms:
-#            convert_comments(idx, post, date, y)
+        for y in coms:
+            convert_comments(idx, post, date, y)
 
 
 def convert_comments(idx, inpar, outpar, com):
@@ -147,6 +147,6 @@ for idx in range(4):
     configfile.writelines(configlines)
     configfile.close()
 
-#    convert_collection(idx)
+    convert_collection(idx)
 
 

@@ -1,0 +1,120 @@
+:-  :~
+  [%owner '~socseb-diswyn-moplex-mocsem--ralnyr-rabsyd-binwyd-dopzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.7.4..08.00.31..4330']
+  [%date-created '~2018.7.4..08.00.31..4330']
+  [%name 'Nock interpreter written in Hoon']
+    ==
+;>
+
+While I've messed around with Nock quite a bit I never actually wrote a Nock interpreter... until now.  Here's a Nock interpreter written in Hoon as a naked generator:
+
+```
+|=([subj=* form=*] .*(subj form))
+```
+
+You may find this a little unsatisfying.  Very well---here's a slightly less trivial implementation of Nock (albeit a naive one):
+
+```
+=<
+|=  [subj=* form=*]
+^-  *
+?@  form  !!
+::
+::  autocons case
+::  *[a [b c] d]     [*[a b c] *[a d]]
+::
+?^  -.form
+  [$(form -.form) $(form +.form)]
+::
+::  `num` is the nock formula number
+::  `body` is the body of the nock formula
+::
+=/  num  -.form
+=/  body  +.form
+::
+::  nocks 0 through 10
+::
+?:  =(num 0)
+  (slot body subj)
+?:  =(num 1)  body
+?:  =(num 2)
+  $(subj $(form -.body), form $(form +.body))
+?:  =(num 3)
+  (cell $(form body))
+?:  =(num 4)
+  (inc $(form body))
+?:  =(num 5)
+  (equal $(form body))
+?:  =(num 6)
+  %=  $
+    form  :*  2
+              [0 1]
+              2
+              [1 +<.body +>.body]
+              [1 0]
+              2
+              [1 2 3]
+              [[1 0] 4 4 -.body]
+          ==
+  ==
+?:  =(num 7)
+  $(form [2 -.body 1 +.body])
+?:  =(num 8)
+  $(form [7 [[7 [0 1] -.body] 0 1] +.body])
+?:  =(num 9)
+  $(form [7 +.body 2 [0 1] 0 -.body])
+?:  =(num 10)
+  ?^  -.body
+    $(form [8 ->.body 7 [0 3] +.body])
+  $(form +.body)
+!!
+::
+|%
+::
+::  slot operator `/`
+::
+++  slot
+  |=  n=*
+  ?@  n  !!
+  ?^  -.n  !!
+  ?:  =(-.n 0)  !!
+  |-  ^-  *
+  =/  addr  -.n
+  =/  subj  +.n
+  ?:  =(addr 1)  subj
+  ?:  =(addr 2)  -.subj
+  ?:  =(addr 3)  +.subj
+  ?:  =(0 (mod addr 2))
+    $(n [2 $(n [(div addr 2) subj])])
+  $(n [3 $(n [(div addr 2) subj])])
+::
+::  cell operator `?`
+::
+++  cell
+  |=  n=*
+  ^-  @
+  ?^(n 0 1)
+::
+::  increment operator `+`
+::
+++  inc
+  |=  n=*
+  ^-  @
+  ?@(n +(n) !!)
+::
+::  equality operator `=`
+::
+++  equal
+  |=  n=*
+  ^-  @
+  ?@  n  !!
+  ?:(=(-.n +.n) 0 1)
+--
+```
+
+This was surprisingly easy to write.  I tested it on my old Nock programs and it worked fine (if only very slowly).
+
+`~taglux-nidsep`
+

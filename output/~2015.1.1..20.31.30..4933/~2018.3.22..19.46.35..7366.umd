@@ -1,0 +1,118 @@
+:-  :~
+  [%owner '~ravmel-ropdyl']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.3.22..19.46.35..7366']
+  [%date-created '~2018.3.22..19.46.35..7366']
+  [%name 'Spirit and practice of digital homecoming [draft]']
+    ==
+;>
+
+Note — 
+This is something we have been discussing internally that seemed worth sharing publicly. 
+It'll probably eventually get edited into an actual blog post — but why wait? 
+`- ravmel-ropdyl`
+
+Your digital home is a general-purpose cloud computer that you own and control, which lasts forever, upgrades and manages itself, and holds your whole digital life.
+
+Your digital life has to be unified, permanent, unconstrained and indestructible. So your digital life has to be a general-purpose cloud computer that you own and control.
+
+Right now it's not. Right now, your digital life, ours, and mine, lives on multiple special-purpose computers that others control. How do we change this? All at once, or step by step? Abruptly or gradually? TLDR: step by step, but *not* gradually.
+
+## From dogfooding to homecoming
+
+Before we, the creators of Urbit, can ask anyone to move to Urbit, we have to move to Urbit ourselves. This process -- using our own system software stack, in our own work and life, in every way possible -- is traditionally known as "dogfooding."
+
+"Dogfooding" is a terrible, demeaning term that makes us think of protein-recovery processing. We don't eat our own dogfood, or anyone else's. We don't expect anyone else to. Dogfood is for dogs. We love dogs. Urbit, like chocolate, is not for dogs.
+
+We prefer "homecoming." We are not moving to Urbit -- no one is. We are not fleeing Facebook. We are not even fleeing the Internet. We are not fleeing anything. We are coming home. We could even think of it as a *return*.
+
+We are not refugees or exiles. We are colonists and settlers. Our new home is a bit rocky at first. We'll make it comfortable. We have no intention of going back!
+
+## Three stages of homecoming
+
+OS developers have another term for using their own OS to get their own work done: using it "in anger." 
+
+We're certainly using Urbit in anger (for communication and publishing). And of course Urbit sustains its own development, so it had to work before it could work. We did all this. We don't need to be reminded of how hard it was. But still, we're nowhere near home.
+
+Once its developers are using a system in anger, there are three stages of homecoming: (1) casual homecoming, (2) selective homecoming, and (3) final homecoming. In general, the system is not an MVP until it achieves a legitimate stage 2.
+
+## Stage 1: casual homecoming
+
+Urbit is right now, and has been for a while, in a state of casual homecoming. It works well enough to develop itself, communicate between node operators, and distribute its own upgrades. It can even be trusted with important or sensitive data, we think, so long as the data is mirrored externally. (You have to pierce through quite a few very simple, and very opaque, layers to own an urbit by sending it packets.)
+
+So in our day-to-day work, we use Urbit whenever we can, for the problems it solves reasonably well. This certainly seems sensible! But we have many, many other objectives. Using our own software does not and cannot take precedence over them.
+
+Casual homecoming is a tarpit and a graveyard. Most systems that reach stage 1 never leave it. A system in the casual stage will never really work right or feel done. It may do a decent impression of a minimum viable product, but only its own developers will be fooled. It will always be a toy, a demo, a test case, a tool, etc. These are all extremely useful functions. They are what they are 
+
+The practical problem with casual homecoming: it lets external legacy tools "cast a shadow" and dictate the shape of our lives inside Urbit. It is more difficult to remove these distortions, than it would have been to reject them in the first place.
+
+Here's a concrete example. Suppose we are in the casual homecoming stage, and we see a problem P. Part of P, Pa, strikes us as difficult. Fortunately there is a giant megacorp, G, which provides an awesome implementation of P -- including Pa, of course. And P is Pa + Pb, where Pb is simple and easy to implement in Urbit.
+
+So we implement Pb in Urbit, and use it. Presto: we are using Urbit in anger. This is the proper thinking for stage one.
+
+We discover, however, that we are choosing subproblems by how easy to solve they are -- not by how important they are. The result is a world in which we've paid a lot of attention to Pb, and very little to Pa.
+
+Even if we later suck it up and also solve Pa, this strange, arbitrary fracture line between Pa and Pb will persist deep into the future. It will probably never be removed. It will always be visible, and people will always be stumbling over it. The existence of G has tricked us into building half an interface.
+
+## Stage 2: selective homecoming
+
+Selective homecoming is not just a matter of increasing casual homecoming. Selective homecoming is a completely different mindset. We can't move our whole lives to Urbit yet -- but we can take one coherent piece of the future and get the whole thing completely right.
+
+With casual homecoming, we're not really moving home. We're just visiting. Suppose the Puritans had just bought some island off Maine from the local Mohicans, to camp for two weeks every August after blackfly season. Sure, technically, you're living in America. Sometimes you chop wood, so you're also working in America. But it's just not serious. And the difference between serious and not-serious is not a difference of degree.
+
+When we use Urbit to solve one of our own problems, we have to use it *as if we'd never solved that problem before in any other way*. When we implement network chat in Urbit, we have to pretend we're upgrading from the phone and snail mail. When we implement blogging, our only competitor is the printing press.
+
+Otherwise, we are not solving a whole problem. We are just solving the half of the problem that we don't need BigCo for.
+
+And we certainly need to do everything possible to avoid using legacy cloud services once we've taken the plunge. We should develop an almost religious aversion to it. We should be able to train our senses of disgust to the point that the idea of using someone else's cloud service is almost physically nauseating.
+
+If we don't think this way, we are not building the Urbit experience. We are building an arbitrary subset of it -- a building with a missing piece. And we cannot actually deliver this piece to the user, since it's a third-party service. We know where and why this boundary exists. They don't. This weird crack seems normal to us, but it won't seem normal to them.
+
+This criticism may seem too abstract. Here's the case study that prompted this thought: Urbit fora versus GH issue tracking.
+
+In this case, Pa is issue tracking and Pb is a discussion forum. But an issue tracking system and a discussion forum are the same thing! A casual conversation, without any outcome that needs to be tracked, loses nothing from being tracked. An issue tracker is just a forum, plus metadata and an interface to manage it.
+
+So, following the mode of casual homecoming, we've created two bodies of discussion about Urbit development, one casual and the other (slightly) less casual, one "urban" and the other "rural". A nice start for the simplest little OS in the world!
+
+If Github did not exist, and our method of long-form discussion was snail mail (externally) and memos typed by secretaries on carbon paper (internally), and, having created this beautiful thing, Urbit, the simplest little OS in the world, then decided that it was time to move to the New World and kick the carbon-paper habit -- would we start by creating a discussion system with no tracking or metadata?
+
+No -- we'd build the simplest, most general thing that solved 80% of our problem. Meaning the whole problem, P, Pa + Pb, not just casual conversations that don't need to be tracked, Pb. Even if we put exactly the same amount of work into a minimal version of P, it will produce a completely different system than the same amount of work applied to Pb alone.
+
+And we are not actually building an interface for ourselves! We have a interface for ourselves -- Urbit plus Github. That interface works fine, although the boundary is a little silly. The interface we are building, however, is just Urbit. That might be a tool for someone. But it's a tool for *someone else* -- someone whose conversations don't need to be tracked, because they're not collaborating in an organized collective effort.
+
+Special homecoming is not general homecoming. We can't do everything. This means we have to draw lines between problems, and solve some of these problems before others. All problems blend into all other problems, so drawing lines is a hard problem that we can't solve perfectly. 
+
+For example, issue management is related to task management, which is related to scheduling and calendars. All hard problems -- although we have to keep in mind that solving a problem *for us* will always be far easier than solving it *for everyone*.
+
+But what we can't do is let existing systems, accidentally and by default, solve this important problem of drawing the lines between problems and systems. These lines will be bad lines, and very hard to un-draw.
+
+The only way to make Urbit truly independent of the rest of the world, as we've promised, is to build Urbit and live in it as if the rest of the world didn't exist -- to the best of our abilities. We have to solve each problem as if it was never solved before, and no one else had ever solves us for it.
+
+The Puritans didn't fly Virgin Atlantic to Boston. They couldn't order groceries on Amazon Fresh. The ocean gave them no choice but to really inhabit their new homes. They knew that once they landed, their old credit cards would never work again.
+
+Urbit and the rest of the world are not on opposite sides of the Atlantic. Inventing an ocean involves ritual and make-believe. But ritual comes naturally to our species. We can fake beginner's mind, just by making silly rules for ourselves.
+
+## Rules for selective homecoming
+
+When we set out to move part of our lives to Urbit, we need to create an ocean and respect it. The ocean isn't real. But it has to be real to us.
+
+Moving across an ocean isn't a gradual process. We can't move to Urbit by using it more and more every day. Using it casually leads to accepting its weaknesses, because we can always use someone else's tools to work around them. Even if we eventually wean ourself off the rural tools, we will have taught ourselves to just work around the problems our own tools can't solve.
+
+Let's take messaging as an example. When we take Urbit messaging seriously, we need to configure our lives so that Urbit is, as far as possible, the only way we get messages or notifications. 
+
+Sure -- we could get an iMessage or a Signal from an acquaintance or connection. No way to prevent that. If we are communicating with each other using iMessage or Signal -- that's a fail. If we can't get our significant others, our close friends, even our small conversation groups, to adopt Urbit, even just to humor us -- why not? If we can't be utterly, ruthlessly fanatical about our own product, we can't ask the world to take us seriously.
+
+And until we feel ready to truly make this pilgrimage, we shouldn't move a step. Using Urbit in "casual anger" -- productively, but not seriously -- gives us terrible habits. By constantly jet-setting between Boston and London, we lose our ability to take the Atlantic seriously. We burn ourselves out. When it's actually time to invent an ocean, we find it's impossible. We're simply too cynical.
+
+What drives Urbit forward is our stubborn refusal to accept its limitations. This mindset can only flourish when we know there is no compromise and no way back.
+
+## Stage 3: general homecoming
+
+Once it becomes technically conceivable that we can get *all* our data out of the BigCos, our escape develops a new intensity and urgency. We want everything out, now. We're horrified by any way in which our personal sovereignty was incomplete -- we won't be able to believe the unpleasant, undignified, even humiliating way we used to live.
+
+But that's a long way from now... 
+
+- `~sorreg-namtyv`
+
+

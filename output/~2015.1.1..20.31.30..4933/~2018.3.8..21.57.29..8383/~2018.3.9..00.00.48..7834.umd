@@ -1,0 +1,15 @@
+:-  :~
+  [%owner '~palfun-foslup']
+  [%type 'comments']
+  [%last-modified '~2018.3.9..00.00.48..7834']
+  [%date-created '~2018.3.9..00.00.48..7834']
+    ==
+;>
+
+I originally wrote how this might actually be a good fit for a thin helper application that provides you with the complex and broad-strokes controls you describe and turns them into the fine-grained config changes Hall accepts...
+
+But having written that out and deleted it a few times, I'm not so sure anymore. Allowing others to make changes to a circle's configuration (making them admins or moderators, if you will) was definitely in the works at some point during my rewrite, and I still feel that should make it in at some point. So yes, that part I agree should be put into Hall.
+
+The fine details of how that is to be used, not so much. I have a very good feeling about stuffing Hall full of very specific logic for tracking invites etc. It's still a generic messaging bus first and foremost. Allowing ships other than the host to touch its config is one thing, and still falls in line with that very well. I don't think that can be said for more complex config/permissions management logic though.  
+An extra layer in the form of a thin app might still be best there. And nothing's stopping clients like Talk to use that for such "extra" functionality... though I also worry about fragmenting the feature-set too much if this doesn't become a standard piece of code on its own.
+

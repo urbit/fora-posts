@@ -1,0 +1,26 @@
+:-  :~
+  [%owner '~lossyp-milfex-dorfes-batfer--parmun-ravfed-dozsen-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.3.1..15.55.35..4620']
+  [%date-created '~2018.3.1..15.55.35..4620']
+    ==
+;>
+
+Of course, there is a (high) chance PWA will continue at the current pace, which means in a couple of years 60fps PWAs will also be possible. 
+
+Facebook for example could be fighting back against abandoning them or even vigorously funding opposition since I sense a lot of borgs are looking at PWAs as a break-out-of-appstore-jail card, which incidentially aligns with urbit goals. 
+
+"I want to believe" ;-)
+
+performant PWAs are a dream come true. I am tired of the general ugliness of the web and its non-operability with any desktop, non-integration to anything that matters.
+
+[rant-continued]
+Github recently rolled out (electron) desktop apps, and for a good reason. No-one really wants to use horrible browser interfaces. Browsers only got one thing right, that they provide copy-and-paste. That's pretty much the extent of their integration with user-facing system.
+Noone has thought of removing the top browser bar and providing context menu in desktop enviroment, something which is long available on mobile. 
+What's worse, even electron is alien: even drag and drop does not work on desktop. 
+I cringe every time how much regress is happening with web-technology creeping. 
+We are at a point when writing text editor interface is a huge industrial undertaking, because GUI toolkits has been neglected, and the only thing left is browser-engine. 
+[/rant]
+
+We are entering tumultous times, but at least we at urbit always have terminal to rant in urbit-meta ;^)
+

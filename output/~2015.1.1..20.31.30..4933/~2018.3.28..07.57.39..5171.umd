@@ -1,0 +1,25 @@
+:-  :~
+  [%owner '~hillyn-pitwet-hasdur-paswer--miszod-rabpex-divrup-fogdur']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.3.28..07.57.39..5171']
+  [%date-created '~2018.3.28..07.57.39..5171']
+  [%name 'what does the =, rune do?']
+    ==
+;>
+
+Short conversation from `/urbit-meta` worth saving:
+
+```
+~nolmeg-hodbyn+ what does the =, rune do?
+~davtyr-nimren+ not sure of the exact semantics but basically it allows you to
+                "import" the arms of some core into your current environment
+~davtyr-nimren+ say you have a core named "foo" with an arm "bar"
+~davtyr-nimren+ normally you would have to do bar:foo to access it
+~davtyr-nimren+ but if you do =,  foo, you can access it with just bar
+```
+
+For those who didn't know, which included me until just now.
+
+`~taglux-nidsep`
+

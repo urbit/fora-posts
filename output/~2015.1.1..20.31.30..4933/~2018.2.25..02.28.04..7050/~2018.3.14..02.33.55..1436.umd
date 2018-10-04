@@ -1,0 +1,14 @@
+:-  :~
+  [%owner '~dandel-rovbur']
+  [%type 'comments']
+  [%last-modified '~2018.3.14..02.33.55..1436']
+  [%date-created '~2018.3.14..02.33.55..1436']
+    ==
+;>
+
+FWIW Pijul is a patch system that automatically resolves merge conflicts based on a commutative and sound theory of patches (Haskellers would feel at home). Worth a study.
+
+- https://pijul.org/
+- https://jneem.github.io/pijul/
+- https://arxiv.org/abs/1311.3903
+

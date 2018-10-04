@@ -1,0 +1,17 @@
+:-  :~
+  [%owner '~palfun-foslup']
+  [%type 'comments']
+  [%last-modified '~2018.2.24..17.14.27..8565']
+  [%date-created '~2018.2.24..17.14.27..8565']
+    ==
+;>
+
+IIRC it used to actually sort of work a little bit? Believe it has been broken for a while though.
+
+RSS it awful in absolutely every way, but as someone who cares deeply about his RSS reader I feel we definitely do need to get this sorted at some point.
+
+For serving RSS, we'll probably want to look at adding it to the work-in-progress Collections app, which I believe is happening... somewhere.  
+For parsing RSS, well, I know that to be an absolute pain to do (multiple standards, often unclean XML, etc.), but also really want an RSS reader running on my Urbit one day. Who knows when someone will be brave enough to tackle this.
+
+Also, a relevant issue is [urbit/arvo#600](https://github.com/urbit/arvo/issues/600).
+

@@ -1,0 +1,48 @@
+:-  :~
+  [%owner '~ponnys-podfer']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.1.22..05.46.21..2490']
+  [%date-created '~2018.1.22..05.46.21..2490']
+  [%name 'What does Urbit `top` look like?']
+    ==
+;>
+
+In Unix operating systems, if you want to know what your system is doing, you can run `top` to present a table of the top resource consuming processes. This lets you see which processes are currently running and which processes are consuming your memory. These are user tools to help the user understand what the system is doing.
+
+Right now, if you want to see what your urbit is doing, your only option is `|verb`. When you run `|verb`, arvo dumps every event that it processes to stderr. This is a kernel developer tool that users should probably never touch; it spews every keypress and doesn't really answer the high level question of what your urbit is doing.
+
+If you want to see how your urbit is consuming memory, your only option is `|mass`, which prints out a tree of memory usage by vane. This isn't as bad as `|verb` is, but still isn't very user friendly.
+
+So there's no user level `top` in urbit. There is a need for a user tool which describes what exactly your urbit is currently doing. What would one look like?
+
+Let's start with some basic information that urbit already keeps track of today which has direct analogues in `top`: a list of running apps and the amount of memory they are currently using, along with some minimal information about how much memory your urbit was consuming as a whole. You could get this data out of today's `|mass`.
+
+But that doesn't help you understand what your urbit is currently doing.
+
+We have all had that moment where we heard our CPU fans spin up, felt lag, and opened up `top` to figure out what the heck is going on. Just printing memory usage doesn't really inform us.
+
+We could add some event counts fairly easily. This vane or app received this many tasks/moves in the last second/minute/hour, keying on the incoming event time. We probably don't want to push any notion of how long an event took to complete inside urbit to prevent us [from being haunted](https://meltdownattack.com/). Urbit's demand that all computation be pure computation is fundamentally good.
+
+But while this is better than nothing, it doesn't really make the internals legible to the user. What we really want is something which shows what an app is waiting for:
+
+```
+    dojo:
+      [+mygenerator 'somedata']
+        <waiting on %ford build, step 5/20>
+          <waiting on %clay for /~marzod/home/...>
+            <waiting on %ames for ~marzod>
+          <waiting on %clay for /~ponnys-nacwer/home/...>
+            <waiting on %ames for ~ponnys-nacwer>
+    my-app:
+      [downloading thread #12345]
+        <waiting on %eyre to fetch http://my-app.org/post/12345>
+```
+
+The above makes the causes of current events legible to the user in a way that just dumping the raw events with `|verb` does not.
+
+I'm unsure about whether this suggestion will work, but to open the discussion: arvo already keeps track of the hierarchical relationship of causes of events through its `++duct` structure, which is a stack of opaque `++wire`s. If you added an arm to vanes and to gall apps which gave a human description for an individual wire in a duct, could you reproduce something like the above?
+
+Or perhaps this is all off base and none of this is The Way to build user visibility into the operating system. But I feel confident that *something* along these lines is needed.
+
+

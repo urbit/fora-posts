@@ -1,0 +1,30 @@
+:-  :~
+  [%owner '~macbur-firryg-lavtul-hilnub--hildus-hodmus-dozlyd-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.2.20..04.10.49..9715']
+  [%date-created '~2018.2.20..04.10.49..9715']
+    ==
+;>
+
+I can agree, as a text/information rendering engine "browsers" have won. 
+Many native apps do embed some webview, and those which do, as the one you listed, do badly with regard to the integrated user experience. How much that still counts as a browser is debatable.
+
+Atom does not look nice on any desktop I tried. It is just not integrated well with the system. Notifications? Inside the app. Filesystem? Drag and drop does not even seem to work in some cases.
+
+Same could be said about IMs, but those I have used on android also look foreign. 
+As to what extent react-native falls under the browser or not, is beyond the point. I still do think any successfully executed UI is more on the side of native toolkits and separation (apps) that on the side of "The" browser: universal in-browser experience. 
+
+I think iOS has the best user experience of all of them, and it seem to achieve that by using native UI toolkits. 
+
+The reason some companies might be willing to sacrifice UX by using browser-rendering engine to me seems only due to economic reasons: it is more expensive to produce native app on android and iOS.
+
+I do agree about the duopoly and that trying to get things into app stores will result in Urbit being banned; We should not even try it, if ever user could download app from Urbity website. 
+
+It still would be nice to achieve good UI via the browser technologies, and it might be possible. 
+
+The post was meant to be a /rant and I think the most important points: 
+- prevalence of separated model
+- native UI toolkits being superior aesthetic wise
+ 
+still stand
+

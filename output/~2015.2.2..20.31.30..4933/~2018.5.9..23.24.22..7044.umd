@@ -1,0 +1,32 @@
+:-  :~
+  [%owner '~narnet-naplyd-mirheb-lavsul--magfex-hapnut-rivteg-daplun']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.5.9..23.24.22..7044']
+  [%date-created '~2018.5.9..23.24.22..7044']
+  [%name 'javascript validator for @p']
+    ==
+;>
+
+A brief transcript from `/urbit-meta`:
+
+```
+~navreg_nopryn+ do we have a javascript validator for @p?
+~palfun-foslup/_github.com
+```
+
+[Link to: https://github.com/urbit/talk/blob/master/js/components/WritingComponent.coffee#L281-L282](https://github.com/urbit/talk/blob/master/js/components/WritingComponent.coffee#L281-L282)
+
+```
+~palfun-foslup+ maybe that?
+~palfun-foslup+ (also see shipshape and po at the top of the file)
+~navreg_nopryn+ i feel like anthony wrote one at some point
+~palfun-foslup+ which can maybe act as a validator if you want?
+~palfun-foslup+ he wrote the @p to/from @ud conversion
+
+~polryt-tarnyr+ you rang ? 
+~polryt-tarnyr/ https://www.npmjs.com/package/urbit-ob
+```
+
+[Link](https://www.npmjs.com/package/urbit-ob)
+

@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~rovnys-ricfer']
+  [%type 'comments']
+  [%last-modified '~2018.2.20..06.52.51..7617']
+  [%date-created '~2018.2.20..06.52.51..7617']
+    ==
+;>
+
+Note that we are likely to change `++duct` from `(list wire)` to `(list vase)` (or maybe change `++wire` from `path` to `vase`) so each app and vane doesn't have to define its own data serialization format to squeeze it into a `++path`. Once the Hoon pretty printer includes doccords, this could be made relatively human-readable.
+

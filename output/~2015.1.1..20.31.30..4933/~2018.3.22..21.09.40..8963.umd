@@ -1,0 +1,16 @@
+:-  :~
+  [%owner '~mipweg-lonlyr-dabper-folmun--dilmug-savtyc-dozner-samzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.3.22..21.09.40..8963']
+  [%date-created '~2018.3.22..21.09.40..8963']
+  [%name 'newbie question about updates']
+    ==
+;>
+
+so i've compiled urbit from sources and ran the binary
+
+now i'm reading that urbit updates itself automatically from the p2p network
+
+does this mean that i never have to pull the sources and compile urbit again?
+

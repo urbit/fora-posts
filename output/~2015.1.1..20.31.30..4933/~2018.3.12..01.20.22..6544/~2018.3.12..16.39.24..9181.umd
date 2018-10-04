@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~rosluc-ritnyx-barmut-doznep--fodmeb-hopryn-marreg-wanzod']
+  [%type 'comments']
+  [%last-modified '~2018.3.12..16.39.24..9181']
+  [%date-created '~2018.3.12..16.39.24..9181']
+    ==
+;>
+
+Because we optimize the system until it works fast enough for development, then go work on something else :-)
+
+Urbit is an OS and there's actually quite a lot of complicated things that happen when you press a key.  Squeezing those things down until lag is imperceptible is an important optimization problem -- but it's also a serious optimization problem.  What we've done so far is casual optimization, to get slowness out of our way.  "Premature optimization," etc -- there is a time for serious optimization, but it's basically when everything else works perfectly.
+

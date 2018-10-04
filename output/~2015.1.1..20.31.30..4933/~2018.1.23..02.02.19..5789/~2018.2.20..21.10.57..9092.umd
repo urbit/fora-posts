@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~wolres-risnex-lodfen-tomped--dassut-ritdep-dozlyd-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.2.20..21.10.57..9092']
+  [%date-created '~2018.2.20..21.10.57..9092']
+    ==
+;>
+
+~taglux-nidsep: re: the discussion on your logic thesis in the video, have you read Turing's dissertation on ordinal logic systems? He creates a calculus that deals exactly with what you are talking about, creating language L_1 to prove L_0, and L_2 to prove L_1, and so on.
+

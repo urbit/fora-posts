@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~tonlur-sarret']
+  [%type 'comments']
+  [%last-modified '~2018.5.30..00.55.14..4144']
+  [%date-created '~2018.5.30..00.55.14..4144']
+    ==
+;>
+
+Not yet, but I think MVE will support editing posts and comments, since they're just individual Clay files with write permissions.
+

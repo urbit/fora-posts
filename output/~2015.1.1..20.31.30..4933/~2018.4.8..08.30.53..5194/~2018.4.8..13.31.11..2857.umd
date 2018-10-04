@@ -1,0 +1,17 @@
+:-  :~
+  [%owner '~tonlur-sarret']
+  [%type 'comments']
+  [%last-modified '~2018.4.8..13.31.11..2857']
+  [%date-created '~2018.4.8..13.31.11..2857']
+    ==
+;>
+
+I like this metaphor. I've used it many times when talking to people about Urbit and its stages of development. We're building a digital city.
+
+I want to work harder with `~sorreg-namtyv`, `~ravmel-ropdyl`, and team to better define and publish our heuristic models for designing and building infrastructure and interfaces. We should define our models for when we're looking to build short-term, hacky, practical tools (like Fora) and when we need to implement long-term ideal modules designed to integrate fundamentally with the rest of the system (like new Ford). Then, when someone takes the call to build a piece of Urbit. they don't feel completely lost, and they don't make otherwise avoidable, suboptimal decisions. 
+
+For instance, Plato is great, but it would have been nice to communicate our intention to standardize on ES6, React, and Redux via Sail in Hoon (what `~sigtus-hossyn` has been working on). Similarly, Meson seems to work well, but it would have been great to communicate about that first before so much work was invested in case we had any other plans. Or, we've had many contributors work hard on apps and tools, but since there's no unified style, they seem to get lost in the void, which is bad. I think it's because they get confusing to keep up to the latest system design standards when those standards aren't articulated and documented anywhere, and thus they become hard to maintain, and they're abandoned (see `~poldec-tonteg`'s Tumblr API connector in the examples, or `~rophex-hashes` wiki also in the examples, both significant projects).
+
+In short, for now, let me explicitly say: if there's anyone here who wants to start working on shovels or aqueducts, reach out to us. We'll let you know if we already have some blueprints. If not, we can draw them together, or let you know if we think there's a project that might be more helpful and more exciting.
+
+

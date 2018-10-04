@@ -1,0 +1,20 @@
+:-  :~
+  [%owner '~ribben-donnyl']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.6.10..19.25.23..7156']
+  [%date-created '~2018.6.10..19.25.23..7156']
+  [%name 'LambdaConf 2018 Talk']
+    ==
+;>
+
+Hello err-body.  I gave a talk at LambdaConf last week.  It was my first talk anywhere, and we had some technical difficulties at the beginning that ate up a good chunk of time.
+
+However, I turned my notes and slides into an article of sorts, and you can read here:
+
+https://github.com/famousj/hoon-lc2018/blob/master/hoon-talk.md
+
+Consider this the "director's cut" of the talk.
+
+Any questions, comments, or suggestions are welcome!
+

@@ -1,0 +1,89 @@
+:-  :~
+  [%owner '~topbus-tabsyd-mirlyt-sabmul--saprev-napsup-napbyn-wanled']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.4.11..19.40.59..3360']
+  [%date-created '~2018.4.11..19.40.59..3360']
+  [%name 'A plan for the documentation']
+    ==
+;>
+
+Hey folks,
+
+~lodleb-ritrul (aka Rob) here. Posting from a comet on a different machine.
+
+Most people agree that the current state of the docs isn't great. So ~taglux-nidsep and I have been discussing an outline to make them better.
+
+Since docs are important for the community, we're hoping to build a degree of community consensus. So consider this thread a place to give input. 
+
+Possible outline (each hyphen represents being a child of a higher tier): 
+
+Tutorial Section
+- Install guide
+- Explanation data structures that underpin system
+  - General â€œwhat is Urbit?â€ should go here to contextualize everything. Short and sweet vision.
+  - Noun: How the data structure is fundamental to Urbit.
+  - Cores
+- Hoon tutorial. Learners do something. 
+  - Fizzbuzz explained step-by-step, with kid-gloves on
+  - Urbytes goes here (can be expanded, with new sections placed where appropriate)
+  - Syntax: what is an expression?
+  - 15-20 introductory runes and examples using them (new)
+  - Introduction to Hoon's type system (no polymorphism)
+  - Intro to Hoon standards library, only major parts
+  - Simple Math
+  - Lists
+  - Sets
+  - Map
+- Arvo tutorial. 
+  - Basic Hoon, but with a different title and slight updating
+  - The subject, rewritten
+  - Network messages, rewritten
+  - Etc etc
+
+Explanation Section\
+Overview of Urbit. Simple, literal, metaphor-free technical primer. Current technical overview is too brief and unclear. The four-letter words should be explained here. Examples of content:
+- Vere 
+- Hoon explanation.
+- Arvo
+  - Ames
+  - Behn
+  - Cay
+  - Dill
+  - Eyre
+  - Ford
+  - Gall
+  - Jael
+  - Vere
+  - Preinstalled apps
+    - Dojo
+    - Hall
+    - Talk
+
+
+How-to guides section (this section could be collapsed right into the tutorial section or navigated to by â€œside progressionâ€)
+- Examples
+- Exercises
+- Project ideas
+
+Reference (no implied progression; that is, no Next: X at the bottom of the page)
+- Concepts (longer explanations, with rigor emphasized)
+  - Each concept should get its own sub-page. So:
+  - Concept B
+  - Concept C    
+- Glossary
+  - Cheat sheet
+  - Runes
+    - Individual rune pages
+  - Types
+  - Irregular Rune Forms 
+- Standard Library
+- Error messages (troubleshooting)
+- Vere
+  - Community
+  - Links to community docs
+  - Community implementations of Nock
+  - Community-made API connectors (those that don't get us in trouble to share)
+- "Expression reference" gets deleted wholesale. As far as I can tell, it's completely redundant with respect to the Runes page.
+
+

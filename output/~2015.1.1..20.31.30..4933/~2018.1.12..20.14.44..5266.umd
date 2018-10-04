@@ -1,0 +1,20 @@
+:-  :~
+  [%owner '~fabhec-hilpes-firref-bisned--normut-racdet-dozlyd-marzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.1.12..20.14.44..5266']
+  [%date-created '~2018.1.12..20.14.44..5266']
+  [%name 'Urbit Project Census 2018']
+    ==
+;>
+
+If you are working on an Urbit project, please leave a comment with 
+a project name, repo link, and your Urbit identity.
+
+I am compiling a list of what is happening in Urbit. 
+
+Post only if you have at least a proof of concept and written at least 
+some code for it. Do not post ideas. 
+
+~ponmep-listem
+

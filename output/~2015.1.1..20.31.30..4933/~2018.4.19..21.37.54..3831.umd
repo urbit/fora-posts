@@ -1,0 +1,159 @@
+:-  :~
+  [%owner '~linhep-latnys-boldep-banlup--topnes-napmep-rivteg-daplun']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.4.19..21.37.54..3831']
+  [%date-created '~2018.4.19..21.37.54..3831']
+  [%name 'High Level Overview of Documentation (Docs Discussion Thread #2)']
+    ==
+;>
+
+## Reorganizing the Documentation
+
+In the last docs thread, I talked about the importance of restructuring our documentation organization so that it's simpler, it better directs newcomers where they need to go, and in certain respects it even resembles a model of Urbit itself.  In this thread I want to propose and explain a high-level outline that (to some extent) achieves these goals.  I'm not going to get too specific just yet---this isn't a comprehensive outline that addresses all subbranches.  It's intended only as a hand-wavy start to motivate discussion.  (Some parts are more hand-wavy than others.)
+
+## The Proposed Outline
+
+Right now we have nine top-level sections on the docs page, and it's not clear to me that the division into these nine sections has any strict logic to it.  I propose reducing it to the following six sections: (i) About, (ii) Using, (iii) Tutorials, (iv) Reference, (v) Code Commentary, and (vi) Community.
+
+This reorganization doesn't entail deleting any work---the plan is just to demote some sections from the top-level so that it's easier to understand how everything fits together.
+
+### 1. About
+
+This section will have largely the same structure it has now.  The only change I think it'd be good to make is to expand a bit on the `technical overview`.  We don't want it to be too long---it's a quick overview, after all---but right now I think it's too lapidary to do its job well.  We can ease some of the pressure on this by putting children docs on the `technical overview` page to provide high-level explanations of some of the modules/terms used on that page.
+
+### 2. Using
+
+The current structure of this section seems fine as well.  This portion of the docs is firmly of the "how-to" family, and I admit to having mixed feelings about this.  (Remember from the last thread that I classified "how-to" docs as those that tell you how to accomplish something without necessarily explaining what's going on under the hood.)  On the one hand, we definitely need something for people who want to learn to use Urbit by pasting strange bits of text into the `dojo` and seeing what happens.  (Think of the way ex-Windows users learn Linux by Googling commands and pasting them into the terminal.  People are going to do it anyway---shouldn't we want them to copy text from us rather than strangers?)
+
+On the other hand Urbit is so different from Linux that a more serious explanation of commands involving different Urbits, desks, revisions, etc. in `dojo` seems like a good idea.  I see two options here: (i) leave the "Using" section alone and write something on that subject for the "Tutorials" section, or (ii) add more serious explanations to the "Using" section.  To make another distinction, we can accomplish (ii) in two ways: (a) slip explanations into each part of the how-to guide, as appropriate, or (b) add a new explanation page under the "Using" section and leave the how-to guides alone.
+
+I don't have strong feelings about this, but I do have a couple of thoughts.  The disadvantage of (i) is that it makes the documentation a little disjointed on that subject.  I have a mild preference for (ii).  But we can easily go overboard loading this section up with explanations that distract people who want to get in, figure out how to create a channel on their planet, and get out.  I think I sort of prefer (b) to (a) so we don't mess up the "how-to" feeling of the other subsections.
+
+The implementation details matter; a well executed (i) is a lot better than a poorly executed (iib).  We plan on doing a good job in any case, of course, but feedback from others is welcome.
+
+### 3. Tutorials
+
+This section would incorporate the "Nock", "Urbytes", "Hoon", and "Arvo" sections of the current docs, and rework them so that they make up a more coherent progression of tutorials.  I've mentioned before that different people have different learning styles, and that we should accommodate this to a certain extent.  One way to do this would be to have distinct tutorial learning tracks for different kinds of people.  I'm not against this per se, and I'll even endorse a certain version of this idea.  But I think our initial goal should be to write a single track with optional modules that people should feel free to skip.
+
+I'm finding it tough to be hand-wavy as I write this section, so I'm going to indulge myself a little and give a more detailed outline.  Here's a draft docs outline for the "Tutorials" section:
+
+```
+A.  Nock
+    1.  Definition
+    2.  Explanation
+    3.  Example
+    4.  Gates and Cores (from old Nock docs)
+B.  Hoon (optional pre-req: Nock)
+    1.  Chapter 1: Basic Urbit data structures
+      a.  Nouns, Atoms, Cells, and Addresses
+      b.  Auras
+      c.  Simple types
+      d.  Faces, Limbs, Wings
+      e.  What is a core? A gate?
+    2.  Chapter 2: Intro to Hoon
+      a.  Explained FizzBuzz example
+      b.  Hoon syntax (expressions defined)
+      c.  ~15 introductory runes and examples using them
+      d.  Subject-orientation
+      e.  Introduction to using Hoon's type system (rip off ~master-morzod's old mold docs)
+      f.  Defining your own types
+      g.  Faces vs. variables
+      h.  Intro to Hoon standard library (frequently used gates)
+        --  Simple Math
+        --  Lists
+        --  Sets
+        --  Maps
+        --  Using hoon.hoon source to teach yourself 
+      i.  Examples
+      j.  Exercises
+    4.  Chapter 3*: Building an Urbit App that uses (most) Arvo vanes
+      a.  What is a Gall app?
+      b.  Network Messages
+      c.  State
+      d.  Subscriptions
+      e.  Intro to Marks
+      f.  Web Apps
+      g.  Gens & Web Apps (Pre-req: Generators tutorial)
+      h.  HTTP requests
+      i.  Security Drivers
+      j.  scry-ing
+      k.  Intro to the Zuse standard Library (I'm not sure where to put this)
+    5.  Chapter 4: Intermediate Hoon
+      a.  Advanced types (polymorphism)
+      b.  Metaprogramming/typing
+      c.  Compiler
+      d. etc.???
+  C.  Generators (Pre-req: Ch. 2 of Hoon)
+  D.  Parser (Pre-req: Ch. 2 of Hoon)
+  E.  Marks (Pre-req: Ch. 2 of Hoon and Generators)
+  F.  Sail (Pre-req: Ch. 3 of Hoon)
+  G.  How to make an API connector (Pre-req: Ch. 3 of Hoon)
+    1.  Include an example walk-through
+```
+
+The Nock section would be essentially what we have now, with a bit of very old documentation resurrected and updated.  (I used ancient Nock docs to write my Nock Goldbach programs, so I'm a little partial to them.)
+
+The Hoon section would be divided into chapters, but it's pretty clear that these chapters are reworked versions of old top-level docs sections.  Chapter 1 is an updated version of the current "Urbytes", Chapter 2 is updated and expanded version of the first half of the current "Hoon" section, Chapter 3 is an updated and expanded version of the current "Arvo" (minus the internals), with a twist.  It will also take Urbeginners through building an app that uses nearly all of the current Arvo vanes.  I don't have any firm idea of that this app should be yet, but I'm thinking a toy messaging app of sorts.  Maybe we can revive ~tonlur's `Feed`, build on it, and use it for teaching?  Other ideas?
+
+Chapter 3 isn't a pure Hoon tutorial because it uses Arvo functionality.  This is okay---no one is using Hoon for anything else right now, and as long as we're clear about this in the documentation I don't see a problem.  The problem with the current "Arvo" section is it combines code commentary on the Arvo internals with a Hoon dev tutorial.  These both have to do with Arvo, but they're pretty distinct and I think we should treat them as such.
+
+I haven't thought much about Chapter 4 yet---there's a lot of work to be done before we get there.  That said, if anyone has more ideas on it we can flesh out the plan a bit more there.
+
+For the generators tutorial I think we should use ~master-morzod's old docs as a starting point.  They need some revision and updates, but there's no need to re-invent the already invented wheel.
+
+I don't know what the plan is for the current hoon.hoon parser library, but as soon as there is one we should document it.  We could use ~palfun-foslup's old fora post as a starting point.  We also need some good tutorials for marks and sail.
+
+One other thing that has been floating around the community is ~rovnys-ricfer's tutorial outline.  It's a great outline and I think it should be developed and added to the documentation.  That said, his outline has a completionist character that I don't think is quite the best priority for us right now.  We should first work on tutorials that give readers an accurate, precise, clear, and relatively quick familiarity with Urbit and its semantics.  After completing the docs outlined above I'd be happy to help turn his outline into a full tutorial.  (On the other hand if someone else gets it done before we finish the above, I have no objection to adding it to what we have.)
+
+### 4. Reference
+
+This section would incorporate the second half of the current Hoon section and would emphasize rigor and precision over pedagogy.  This is the land of strict definitions and complete specifications.  It would include:
+
+```
+  A.  Concepts (longer explanations)
+  B.  Glossary (briefer definitions)
+  C.  Type definition given in code
+  D.  Runes
+  E.  Irregular Rune Forms (also integrated into D)
+  F.  Standard Library (Hoon and Zuse)
+  G.  Error messages
+```
+
+There are a number of little things I want to work on for this section, but none of those are worth mentioning just yet.  One thing that *is* worth mentioning is how to standardize each of the rune pages in our docs.  We haven't yet found the right way of communicating the right syntax for each of the runes in the docs.  Right now we give the parsed result of the expression for each kind of rune.  For example, the `?^` "wutket" doc gives us:
+
+`[%wtkt p=wing q=hoon r=hoon]`
+
+I don't think it's bad to provide this, but we shouldn't pretend this is particularly helpful for beginners trying to figure out how to use runes they haven't seen before.  It isn't too hard to understand that `q` and `r` are arbitrary Hoon expressions, but what's `p`?  What's a wing?  *Looks in hoon.hoon.*  Oh, it's a list of limbs.  (It strikes me as an unhelpful clash of metaphors to define a wing as a list of limbs, but I'll refrain from expanding on that complaint---that gets into the debate about the naming conventions in hoon.hoon!)  What's a limb?  *Looks in hoon.hoon.*  It's a little complicated:
+
+```
+++  limb  $@  term                                      ::  wing element
+          $%  {$& p/axis}                               ::  by geometry
+              {$| p/@ud q/(unit term)}                  ::  by name
+          ==                                            ::
+```
+
+You noobs out there understand, right?  So after the `?^` rune I need to supply one expression that's a list of limbs, and then two other Hoon subexpressions.
+
+This is too much work to find out what I really want to know: what kind of expressions follow the `?^` rune?  Each page should be a one-stop destination for questions as straightforward as that, without having to learn how the Hoon compiler parses expressions.  I know that the reference section de-emphasizes the importance of pedagogy, but we shouldn't drop it altogether.  These pages need to be more user-friendly while also being rigorous and precise.  If it's rigorous and precise but most people can't use it, that's a problem.  (I have testimony from actual Hoon-heads that this is a real problem, but the names of the guilty will remain secret.)
+
+Having done all this complaining, I have to admit that this isn't a trivial problem to solve.  There are lots of unique expression types that various runes need, and it's not obvious what simple, precise convention we can use that would be accessible to beginners.  One distinction ~sorreg-namtyv has been using is between "value" and "pattern" subexpressions.  This helps, but is far from comprehensive of the specific types of subexpressions runes require.
+
+One solution is to say in plain English: "The `?^` rune is followed by three expressions: (i) a wing (i.e., list of limbs), and (ii) & (iii) two other Hoon expressions.  And a limb is [something relatively concise]...."
+
+Is this ideal?  Probably not.  But I think it's better than what we have right now.  If anyone has other ideas, I'm open to them.
+
+### 5.  Code Commentary
+
+This is where we'd put all documentation that serves as commentary on the code of the various parts of the Urbit software: Vere docs, Arvo internals, Hall docs, etc.  Over time we can expand this to cover all parts of the code-base for those who are doing kernel dev work.  The Hall portion will probably get turned into more of a tutorial at some point; but the rest is for getting community contributors up to speed on how Urbit itself works.
+
+### 6.  Community
+
+This section has links to the various non-Tlon tutorials out there, Nock implementations, and community-written Hoon snippets and examples we want to showcase.  And anything else we can think of for all the wonderful Urbit contributors out there...
+
+## Thoughts?
+
+This post is a little all over the place and I apologize for that!  Any and all feedback is welcome.
+
+`~taglux-nidsep`
+

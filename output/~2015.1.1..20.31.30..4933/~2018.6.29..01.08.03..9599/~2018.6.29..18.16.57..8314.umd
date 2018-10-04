@@ -1,0 +1,14 @@
+:-  :~
+  [%owner '~midbes-ricbyr-bosryx-tabtyc--davbec-wisleg-binwyd-dopzod']
+  [%type 'comments']
+  [%last-modified '~2018.6.29..18.16.57..8314']
+  [%date-created '~2018.6.29..18.16.57..8314']
+    ==
+;>
+
+Hmmm, I actually really don't like the new brackets, but maybe just because I don't get the naming scheme. `pel/per`, `kel/ker`, `sel/ser` all worked because they were "paren left/right", "curly left/right", and "square left/right". I'm not sure how you're supposed to get from "(" to `lit` or back again. The same goes for `net` and `pad`, too, which have the double-negative of also being two important words that we use pretty regularly.
+
+I used `tag` as an example because "percentage" -> `tag` (`taj`?), so we wouldn't have to rename `per`, along with `%foo` having "tag-like" connotations in Hoon.
+
+(Someone mentioned in urbit-meta that `vat` would quickly become "silent-v" `at`, which means you'd end up just saying "at p" for `@p`, which seems good)
+

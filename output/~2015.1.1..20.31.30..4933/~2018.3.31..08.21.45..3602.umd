@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~fitler-mirdet-bottuc-dandeb--magryn-midwyt-dozner-samzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.3.31..08.21.45..3602']
+  [%date-created '~2018.3.31..08.21.45..3602']
+  [%name 'Installing on OSX Yosemite. Sigsegv.h not found.']
+    ==
+;>
+
+I am not much of a programmer but I am getting a Sigsegv.h error when I attempt to run the gmake. Any thoughts?
+

@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~rovnys-ricfer']
+  [%type 'comments']
+  [%last-modified '~2018.4.12..00.06.24..8206']
+  [%date-created '~2018.4.12..00.06.24..8206']
+    ==
+;>
+
+Today we implemented the rest of the worklist-based `+execute` and got it to compile and pass most of the tests. It's not yet passing `+test-live-and-once`. Latest work can be found in the `ford-turbo` branch of my fork until we get the tests all passing again.
+

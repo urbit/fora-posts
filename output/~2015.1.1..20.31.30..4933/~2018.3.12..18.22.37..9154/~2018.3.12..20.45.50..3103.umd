@@ -1,0 +1,11 @@
+:-  :~
+  [%owner '~palfun-foslup']
+  [%type 'comments']
+  [%last-modified '~2018.3.12..20.45.50..3103']
+  [%date-created '~2018.3.12..20.45.50..3103']
+    ==
+;>
+
+To expand a bit on ~fantyc's answer,  
+Yes, people will likely be putting their planets on servers provided by urbit hosting providers. But that's really no different from relying on a hosting provider for your website. You don't consider your website as their data, and you don't expect them to go snooping through it either. That'd be a breach of trust (and usually also contract) which their PR and legal departments won't be happy with.
+

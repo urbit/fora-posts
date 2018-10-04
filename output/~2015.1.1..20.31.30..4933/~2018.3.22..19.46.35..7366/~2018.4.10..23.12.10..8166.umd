@@ -1,0 +1,16 @@
+:-  :~
+  [%owner '~radmyr-simryl-foster-nolruc--fabfeb-nidsup-dozner-samzod']
+  [%type 'comments']
+  [%last-modified '~2018.4.10..23.12.10..8166']
+  [%date-created '~2018.4.10..23.12.10..8166']
+    ==
+;>
+
+Requirements:
+End-to-end encrypted
+Single or multi-party, seamless conversion between them, new additions can read backlog
+Single identity, usable across multiple devices: IdADev1 should only have to specify IdB, regardless of B's devices. If IdA switches to IdADev2, the thread should sync to the new device.
+Desktop and mobile clients available.
+
+XMPP with OMEMO accomplishes all of these, but with non-trivial setup costs, and the application ecosystem is fragile.
+

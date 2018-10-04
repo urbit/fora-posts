@@ -1,0 +1,28 @@
+:-  :~
+  [%owner '~modnes-libdex-nammur-labsyr--taplex-magfex-dozner-samzod']
+  [%type 'comments']
+  [%last-modified '~2018.3.31..15.05.27..8090']
+  [%date-created '~2018.3.31..15.05.27..8090']
+    ==
+;>
+
+For FreeBSD: [https://www.freshports.org/devel/libsigsegv/](https://www.freshports.org/devel/libsigsegv/).
+
+For OS X, if you have homebrew:
+
+```
+brew install libsigsegv
+```
+
+Better yet, install all the urbit dependencies:
+
+```
+brew install --only-dependencies urbit
+```
+
+If you don't have homebrew: [https://brew.sh/](https://brew.sh/).
+
+Or, if you really don't want it, you can start building dependencies individually, starting here [https://www.gnu.org/software/libsigsegv/](https://www.gnu.org/software/libsigsegv/) (although you'll undoubtedly need more).
+
+`~master-morzod`
+

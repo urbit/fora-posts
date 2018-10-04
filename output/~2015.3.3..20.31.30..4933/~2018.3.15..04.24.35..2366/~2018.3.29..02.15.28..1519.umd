@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~rovnys-ricfer']
+  [%type 'comments']
+  [%last-modified '~2018.3.29..02.15.28..1519']
+  [%date-created '~2018.3.29..02.15.28..1519']
+    ==
+;>
+
+Finished all of those steps except for getting the tests passing again. They're currently failing on the null state check after running an autocons schematic, probably indicating a bug in `+cleanup`. Debugging will proceed tomorrow.
+
+https://github.com/belisarius222/arvo/tree/ford-turbo-wip
+

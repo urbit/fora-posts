@@ -1,0 +1,14 @@
+:-  :~
+  [%owner '~linhep-latnys-boldep-banlup--topnes-napmep-rivteg-daplun']
+  [%type 'comments']
+  [%last-modified '~2018.4.14..05.04.37..5516']
+  [%date-created '~2018.4.14..05.04.37..5516']
+    ==
+;>
+
+Upon further reflection there is another sort of documentation that doesn't seem to fit easily in one of the three categories above, at least as I've defined them: (i) tutorial, (ii) reference, (iii) how-to.  The Vere, Arvo Internals, and Hall sections all seem to be something more like "code commentary".  We definitely need tutorials, definitional reference docs, and how-to guides.  Interestingly enough, however, these are all the sorts of thing you will want to learn to be a normal Urbit app developer.  Do we want to have a distinct "code commentary" type of doc, or do we want to revise the Vere, Arvo Internals, and Hall docs to fit one of the three other kind?  The correct answer is pretty clearly the former, and in fact the "code commentary" docs play an especially important role at this stage of Urbit's existence.  Once you get basically comfortable with Hoon and you want to start working on the Urbit kernel, code commentary is pretty much the perfect way to get you started.
+
+Code commentary docs explain what's going on in the various parts of the Urbit codebase.  Arguably we should even extend what we have to explain more of the codebase than is already explained, though of course this must be done in a coordinated way with people actually writing the codebase.  (We don't need to comment on something that's about to change, for example.)  Also, some of what we currently have is a bit outdated.  It will be a good educational experience for Rob and I to try updating what we have in, say, Arvo internals.
+
+~taglux
+

@@ -1,0 +1,16 @@
+:-  :~
+  [%owner '~dosnev-ridmes-firwen-patdul--topwyt-donmus-binwyd-dopzod']
+  [%type 'comments']
+  [%last-modified '~2018.6.14..23.13.23..6979']
+  [%date-created '~2018.6.14..23.13.23..6979']
+    ==
+;>
+
+After a breach, you boot it the same way you did the first time: 
+
+```
+urbit -w sampel-palnet -t sampel-sompel-simpel-sampel
+```
+
+You'll have to wait until the next network reset to boot your planet, unfortunately. Eventually there will be a way to restart a planet without a breach, but that hasn't been implemented yet.
+

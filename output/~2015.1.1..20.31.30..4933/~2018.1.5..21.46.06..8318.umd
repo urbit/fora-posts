@@ -1,0 +1,16 @@
+:-  :~
+  [%owner '~tonlur-sarret']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.1.5..21.46.06..8318']
+  [%date-created '~2018.1.5..21.46.06..8318']
+  [%name 'PSA: fora.urbit.org, or A Second Planet for Fora']
+    ==
+;>
+
+Alright! We just moved Fora onto its own standalone planet, so that now it will operate separately from our web planet serving the static `urbit.org` content. This will make it so that the constant [Ford rebuilding](https://fora.urbit.org/posts/~2017.10.19..04.47.50..c107~) which causes the `504` errors to `urbit.org` will only happen on this Fora planet, and won't affect static pages that get updated far less frequently (i.e. docs and blog posts). 
+
+So, now `fora.urbit.org` points to that second planet's IP address. All existing Fora links now redirect to this new subdomain.
+
+Meanwhile, `~rovnys-ricfer` is working on actually fixing Ford.
+

@@ -1,0 +1,10 @@
+:-  :~
+  [%owner '~rovnys-ricfer']
+  [%type 'comments']
+  [%last-modified '~2018.3.28..00.27.35..3174']
+  [%date-created '~2018.3.28..00.27.35..3174']
+    ==
+;>
+
+We'll also want to remove the `%clay-once` and `%gall-once` kinds of `+dependency`, since now all schematics are live and can only be converted to once by wrapping them in a `%pin` schematic.
+

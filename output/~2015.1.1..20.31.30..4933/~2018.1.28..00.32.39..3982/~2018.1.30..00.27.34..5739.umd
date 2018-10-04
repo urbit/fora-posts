@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~palfun-foslup']
+  [%type 'comments']
+  [%last-modified '~2018.1.30..00.27.34..5739']
+  [%date-created '~2018.1.30..00.27.34..5739']
+    ==
+;>
+
+Just chatted with someone who also hit this, and it does apparently stop your ship's boot and kill the process.
+
+A userspace app doing something dumb shouldn't be able to mess your boot up like this, but it does. I'm afraid your ship's out of commission until we breach or find a way to work around this somehow.
+

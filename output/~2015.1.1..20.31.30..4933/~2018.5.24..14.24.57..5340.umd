@@ -1,0 +1,24 @@
+:-  :~
+  [%owner '~silfel-nismeg-fodsyd-masrul--solref-sivrun-rivteg-daplun']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.5.24..14.24.57..5340']
+  [%date-created '~2018.5.24..14.24.57..5340']
+  [%name 'Trying to get my Urbit planet working again']
+    ==
+;>
+
+Hi, I was using Urbit in 2017 but there was nothing to do and I switched laptops.
+
+I'm trying to recover my planet. I'm running `urbit -w wisseg-bosmeg -t my-invite-code`.
+
+The setup seems to get stuck at this part:
+
+```
+    ; ~zod not responding still trying
+    <awaiting hood, this may take a few minutes>
+```
+
+Does anyone know what I should do next?
+
+

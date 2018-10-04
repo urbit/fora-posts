@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~ponnys-podfer']
+  [%type 'comments']
+  [%last-modified '~2018.3.14..05.11.21..2917']
+  [%date-created '~2018.3.14..05.11.21..2917']
+    ==
+;>
+
+That looks like a error coming from zsh, not urbit. Perhaps it is trying to do some sort of interpretation on the tilde character?
+
+Have you tested in a normal shell like bash?
+

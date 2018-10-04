@@ -1,0 +1,39 @@
+:-  :~
+  [%owner '~nidmet-follen-morpun-moctux--sigfel-foghet-dozlyd-marzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.1.17..07.11.57..7266']
+  [%date-created '~2018.1.17..07.11.57..7266']
+  [%name 'Toward aesthetically sustainable interfaces']
+    ==
+;>
+
+One of the important consideration for any social platform is balancing 
+the needs for customization with the need for uniformity of the interface.
+
+Most social platforms today limit the degree of customization the user can do to the public facing 
+part of interface. There is a very good reason for this: real aesthetic requires at least some degree of thinking and training. Letting user have to ability to essentially turn their UI into a custom HTML page leads to horrible results, if done wrong. 
+
+When the threshold to customization is too low, you will momentarily see your user base installing the latest "cool" theme, thus decreasing the usability of the platform and resulting in horrible user experience as a whole. 
+
+Urbit being entirely user-owned, we have really to way to enforce such constraints, or do we?
+
+I propose, at least when it comes to Urbit social networks, a two tier system. The first tier is mostly uniform user interfaces with a slight degree of customization possible. I think Facebook got this right. You are allowed 
+to customize your avatar, banner etc., but you are not allowed to render an unreadable custom homepage as your public profile. 
+
+The second tier is venue  for users artistic expressions - a link to their urbit hosted homepage, on which they can do as they please, even to the point of rendering each paragraph in different casing with red blinking font ;-)
+
+When it comes to implementation, it depends on how future apps will be structured. 
+Quite probably the right model would be for an Urbit social network app just source the relevant profile information from the remote Urbit and render it locally: a kind of :tree for people. 
+
+That way, we really get rid of the customization problem. Users who want fancy stuff can just have their fancy homepage: without hindering other users ability for readable browsing (if you think average aesthetic on a fully customizable platform would not be that bad, i implore you to have a look at an average blog to get a feeling)
+
+For a real world manifestation of this problem, there is an interesting case in countries with no public aesthetic management. Absence of any artistic moderation resulted in a horrible aesthetic mess littered with ads and ugly shop fronts. 
+
+The freedom of artistic expression is not a problem in itself. It becomes a problem once a multitude of actors 
+start using contradictory styles resulting in decrease of average quality regardless of quality of the particulars.
+
+I believe in Urbit we can get this right.
+
+~ponmep-litsem
+

@@ -1,0 +1,32 @@
+:-  :~
+  [%owner '~listud-satpur-moslec-ligsyr--bicdex-nisdeg-binwyd-dopzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.6.1..18.39.22..9247']
+  [%date-created '~2018.6.1..18.39.22..9247']
+  [%name 'Hoon Exercises for Beginners #2']
+    ==
+;>
+
+Here is a set of exercises that is intended to get you working with `list`s in Hoon.  A list is a null-terminated cell, such as the following list of atoms:
+
+```
+[32 45 76 48 ~]
+```
+
+### Create a list of atoms from x to y (without using the Hoon stdlib for lists)
+
+Write a gate that takes two atoms x and y and returns a list of all atoms going from x to y (inclusive).  If x isn't less than or equal to y, return a null list.
+
+Don't use any list functions from from hoon.hoon's stdlib.
+
+### Get the n-th item of a list of atoms (without stdlib)
+
+Crash if there is no n-th member.  Don't use list functions from the stdlib.
+
+### Return sum of a list of atoms
+
+So, for example, if you start with the list `[23 43 63 ~]`, the gate should return `129`.
+
+Try doing two versions of this gate: (a) without using the Hoon stdlib for lists, and (b) with the stdlib for lists.
+

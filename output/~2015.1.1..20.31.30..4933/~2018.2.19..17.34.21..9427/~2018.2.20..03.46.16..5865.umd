@@ -1,0 +1,34 @@
+:-  :~
+  [%owner '~ponnys-nacwer']
+  [%type 'comments']
+  [%last-modified '~2018.2.20..03.46.16..5865']
+  [%date-created '~2018.2.20..03.46.16..5865']
+    ==
+;>
+
+Browser engines won, and won everywhere but iOS.
+
+Desktop apps have made a major comeback by abandoning their native toolkits and just bundling a browser engine with their webapp instead. [Electron][electron], [Chromium Embedded Framework][cef], [Muon][muon].
+
+The Atom editor? Electron was developed for Atom in the first place. Microsoft VisualStudio Code? Electron. Skype? Electron. GitHub's main app? Electron. WhatsApp? Electron. Discord? Electron. Slack? Electron. Signal Desktop? Electron. Steam? The game list and friends list are native, but everything about the store, the game communities, user profiles, etc. is run inside Chromium Embedded Framework. Amazon Music? Chromium Embedded. Brave Browser? Muon, which is a fork of Electron.
+
+We are now in the distressing situation where desktop users have five copies of Chromium on their desktops which are using out of date engines with known vulnerabilities. That Electron makes the Chromium sandbox an opt-in feature makes this situation worse. (Expect to hear about vulnerabilities exploiting this in the future.) Things are better on Android where at least most apps that are bundled webpages at least use the system WebView instead.
+
+Fuschia's UI is [Flutter][flutter] which is a sanitized HTML with Javascript replaced with Dart. It's really nice, but it should be thought of as "cleaned up React with a nicer language" instead of something new. The [Apple Copyright][apple-c] is found at the top of the rendering engine code because it is a derivative of WebKit; if you go into individual files in Flutter Core, you'll see code going all the way back to KHTML. Flutter's core essence is a browser, even if it has an AOT compilation mode to make the Apple App Store happy. And note that I compared it to React instead of React Native; it uses its own emulated Material Design and iOS widget sets instead of using the system native ones.
+
+How much of the remaining apps, mobile or desktop, are React Native? A pretty good chunk; at least most things in Facebook's sphere of influence are. You mentioned the Facebook and Snapchat app above. Well, React Native is Javascript and a non-HTML DOM. aka: a Browser.
+
+iOS is an interesting exception. Lot's of things on iOS *aren't* using browser engines and are actually coded directly against UIKit. iOS used to not let UIWebViews in individual apps have JITed Javascript (while Safari could), meaning performance of webapps wrapped in web views was inferior to running them in Safari. Apple changed this in 2014, and things are starting to change. React Native came out in 2015, btw. The Facebook app is now running on it.
+
+Finally, I've seen enough mobile Linux projects over the decades that I see little reason to believe that Purism's will succeed. Notably, right now, their website isn't loading at all, which speaks volumes. I see no evidence that they've learned anything from Ubuntu Phone, Firefox Phone, OpenMoko or the Sharp Zaurus. (I loved my Zaurus back in the day. It ran QTopia! But realistically, it was a pile of garbage.)
+
+I continue to believe the correct path forward is to ship a WebAssembly version of vere to clients via the browser since this actually works everywhere. Today, even Safari on iOS [can run WebAssembly][can-run-wasm]. Given the history of the creator of Urbit, I expect the various App stores to reject or remove any dedicated Urbit app, especially since there's no real way to impose censorship on an Urbit social feed. As the Android/iPhone duopoly is unlikely to be broken (much less by something coming out of the Free Software community, who are broadly incompetent at product design), allocating resources assuming that said duopoly will be broken is a waste of time.
+
+[electron]: https://electronjs.org/
+[cef]: https://bitbucket.org/chromiumembedded/cef
+[muon]: https://github.com/brave/muon
+[flutter]: https://flutter.io/
+[apple-c]: https://github.com/flutter/engine/blob/master/sky/engine/core/LICENSE-APPLE
+[can-run-wasm]: https://caniuse.com/#feat=wasm
+
+

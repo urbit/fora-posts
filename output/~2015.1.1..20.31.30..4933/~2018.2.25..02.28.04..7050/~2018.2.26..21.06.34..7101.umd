@@ -1,0 +1,16 @@
+:-  :~
+  [%owner '~ponnys-podfer']
+  [%type 'comments']
+  [%last-modified '~2018.2.26..21.06.34..7101']
+  [%date-created '~2018.2.26..21.06.34..7101']
+    ==
+;>
+
+You would use a gall app since that's the only way to do stateful polling; I'm not sure why you thought I was suggesting otherwise. The octet stream handed back via `eyre` is data, while state about exponential backoff in case of 304s/500s and state about downloading referenced images/sounds in the thread for the eventual clay commit are gall specific metadata.
+
+When a server gives you an artifact which is not personalized to you, you want
+to store it exactly both because it was possibly observed by multiple people, and because you don't want to store transformed artifacts in general. Especially in Urbit where there's a build system to perform the transformation for you. If the message board is popular, there's usually tools outside of Urbit which work on said json format, and maintaining compatibility with existing tools and formats is generally preferable to creating your own.
+
+(Whether you do this by having a single mark which does semantic parsing but has a 1:1 representation with the original json and a `++grad` set to `%json` for blob storage, or whether you break it into a raw json mark (`&site-thread-json`) and a semantic mark (`&site-thread`) is not a pattern that's established yet. I can see arguments for both.)
+
+

@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~bannum-magtus']
+  [%type 'comments']
+  [%last-modified '~2018.3.19..02.12.23..7071']
+  [%date-created '~2018.3.19..02.12.23..7071']
+    ==
+;>
+
+Currently you cannot restore from anything other than the complete directory of a currently shut down planet. If you're computer drops in the ocean while the planet is running, it's gone until the next breach.
+
+This is something that's going to be implemented eventually but currently hasnt been.
+

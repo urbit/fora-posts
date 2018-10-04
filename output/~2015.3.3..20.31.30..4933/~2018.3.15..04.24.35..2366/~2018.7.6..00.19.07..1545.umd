@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~littel-ponnys']
+  [%type 'comments']
+  [%last-modified '~2018.7.6..00.19.07..1545']
+  [%date-created '~2018.7.6..00.19.07..1545']
+    ==
+;>
+
+We continued the rewrite today, focusing on the `+reduce` step.
+
+[Current WIP](https://github.com/urbit/arvo/commit/4030bddc55610436bf1fbbc68b5a107525189e09).
+

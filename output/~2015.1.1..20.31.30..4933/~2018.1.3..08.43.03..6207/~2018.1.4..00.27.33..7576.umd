@@ -1,0 +1,22 @@
+:-  :~
+  [%owner '~dacwyn-savryl-tobled-wanrel--nomhec-dapwet-dozdev-samzod']
+  [%type 'comments']
+  [%last-modified '~2018.1.4..00.27.33..7576']
+  [%date-created '~2018.1.4..00.27.33..7576']
+    ==
+;>
+
+Thanks ~rovnys, this is insightful. 
+
+I think using the memory abstraction of the host OS is clever. Idk if what are exactly Linux algos, but executable parts of memory are kept in physical ram, while data could be offloaded to swap. 
+
+Will we get some some clever tricks to get OS to be more apt to put stuff like actual data in the swap , or maybe this already happens. OS has no idea about which data structures represent compiled hoon and which are clay nodes etc. On the other hand maybe it happens already by virtue of access frequency.
+
+I think just migrating to 64bit will keep us afloat for sufficiently long. With the decentralized nature someone wanting to have a data center run on Urbit could just use several moons to get around this limitation. 
+
+Hopefully someone is making some more or less serious plans already, because marketing and practically wise the 2GB limit could be a huge turnoff. The "Urbit magic" somewhat suffers when one learns storing media inside urbit is verboten. 
+
+As a side, some smart people made a tool to dynamically manage swapspace with this name. In an Urbit harbour service I imagine hundreds of urbits each jailed inside it's own VPS and having majority of its memory inside swap. Perhaps different level of service could provide different ratio of RAM/Disk space. Dynamical upgrade of tier would be easily realized via adjusting swap : )
+
+~ponmep-litsem
+

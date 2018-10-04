@@ -1,0 +1,13 @@
+:-  :~
+  [%owner '~hatnys-tiptem-rinrux-dilmev--tonter-pidlyn-marreg-wanzod']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.3.12..01.20.22..6544']
+  [%date-created '~2018.3.12..01.20.22..6544']
+  [%name 'Input lag in dojo']
+    ==
+;>
+
+Why is there a noticeable delay on every keypress on dojo?
+Typing feels slower than typing on my 3G mobile data with an Android SSH client.
+

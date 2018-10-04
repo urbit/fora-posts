@@ -1,0 +1,13 @@
+:-  :~
+  [%owner '~fipsym-hacrel-dilpet-salsut--lisset-hocmel-dozlyd-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.2.28..10.44.06..5248']
+  [%date-created '~2018.2.28..10.44.06..5248']
+    ==
+;>
+
+JSON Feed may be a good improvment to RSS/ATOM already. Maby worth a look when thinking about RSS/ATOM Feed integration: https://jsonfeed.org/
+
+From their website:
+[...] JSON Feed, a format similar to RSS and Atom but in JSON. It reflects the lessons learned from our years of work reading and publishing feeds.
+

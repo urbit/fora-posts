@@ -1,0 +1,13 @@
+:-  :~
+  [%owner '~littel-ponnys']
+  [%type 'comments']
+  [%last-modified '~2018.7.10..00.06.21..1918']
+  [%date-created '~2018.7.10..00.06.21..1918']
+    ==
+;>
+
+Today, we got the refactored ford-turbo to compile successfully and pass a few
+basic tests. Still debugging.
+
+[Current WIP](https://github.com/urbit/arvo/commit/a01ca8043e1cff1be8b205efee174413381f7e28).
+

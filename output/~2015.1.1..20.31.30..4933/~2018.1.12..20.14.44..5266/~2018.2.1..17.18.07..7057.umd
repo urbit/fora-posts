@@ -1,0 +1,19 @@
+:-  :~
+  [%owner '~sortun-bantul-pinnel-pilden--findys-nisnub-dozlyd-marzod']
+  [%type 'comments']
+  [%last-modified '~2018.2.1..17.18.07..7057']
+  [%date-created '~2018.2.1..17.18.07..7057']
+    ==
+;>
+
+Project: urbit-devops
+Repo: https://github.com/ngzax/urbit-devops
+Author: ~winter-paches
+Description: Automation scripts to get you quickly up and running and then manage a cloud-hosted Urbit
+
+Project: urbit-sync
+Repo: https://github.com/ngzax/urbit-sync
+Author: ~winter-paches
+Description: Syncs your local filesystem to your mounted urbit pier
+
+

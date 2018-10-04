@@ -1,0 +1,12 @@
+:-  :~
+  [%owner '~tirdus-livdyn-firpec-linlex--bicsug-folrud-binwyd-dopzod']
+  [%type 'comments']
+  [%last-modified '~2018.5.30..00.04.32..7436']
+  [%date-created '~2018.5.30..00.04.32..7436']
+    ==
+;>
+
+~rovnys finished implementing the `%diff`, `%join`, and `%pact` schematics. Now all schematics and Ford runes are implemented and have at least basic testing.
+
+The next phase of the project will be to load ford-turbo into the kernel as a new vane alongside existing Ford and move the call sites in other vanes over to ford-turbo one by one. We might do some cleanup or more testing before that, or we might jump straight into it.
+

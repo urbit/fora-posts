@@ -1,0 +1,23 @@
+:-  :~
+  [%owner '~sidned-missum-batnum-sidred--ragter-toptex-dosmel-sovwel']
+  [%comments '.y']
+  [%type 'fora']
+  [%last-modified '~2018.5.28..22.53.22..5833']
+  [%date-created '~2018.5.28..22.53.22..5833']
+  [%name 'Setup Documentation Mismatch']
+    ==
+;>
+
+Hi,
+
+Yesterday installed an urbit instance on macOS and all went smoothly like the setup instructions explained. Today decided to boot another instance on a Digital Ocean VM and hit a small hiccup during the installation. 
+
+The suggested install step failed: 
+urbit@urbit:~/urbit$ sudo ninja -C ./build/ meson-install
+ninja: Entering directory `./build/'
+ninja: error: unknown target 'meson-install'
+
+Running `urbit@urbit:~/urbit$ ninja -C ./build/ install` did the trick for me.
+
+Wondering if anyone faced the same issue and if it something worth updating in the documentation?  
+
